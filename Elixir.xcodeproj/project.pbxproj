@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F01407651A1BAB9C0036A69A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407641A1BAB9C0036A69A /* main.m */; };
+		F01407681A1BAB9C0036A69A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407671A1BAB9C0036A69A /* AppDelegate.m */; };
+		F014076B1A1BAB9C0036A69A /* Elixir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F01407691A1BAB9C0036A69A /* Elixir.xcdatamodeld */; };
+		F014076E1A1BAB9C0036A69A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014076D1A1BAB9C0036A69A /* ViewController.m */; };
+		F01407711A1BAB9C0036A69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F014076F1A1BAB9C0036A69A /* Main.storyboard */; };
+		F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01407721A1BAB9C0036A69A /* Images.xcassets */; };
+		F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01407741A1BAB9C0036A69A /* LaunchScreen.xib */; };
+		F01407821A1BAB9C0036A69A /* ElixirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407811A1BAB9C0036A69A /* ElixirTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F014077C1A1BAB9C0036A69A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F01407571A1BAB9C0036A69A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F014075E1A1BAB9C0036A69A;
+			remoteInfo = Elixir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F014075F1A1BAB9C0036A69A /* Elixir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elixir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01407631A1BAB9C0036A69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01407641A1BAB9C0036A69A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F01407661A1BAB9C0036A69A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F01407671A1BAB9C0036A69A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F014076A1A1BAB9C0036A69A /* Elixir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elixir.xcdatamodel; sourceTree = "<group>"; };
+		F014076C1A1BAB9C0036A69A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F014076D1A1BAB9C0036A69A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F01407701A1BAB9C0036A69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F01407721A1BAB9C0036A69A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F01407751A1BAB9C0036A69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F014077B1A1BAB9C0036A69A /* ElixirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01407801A1BAB9C0036A69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01407811A1BAB9C0036A69A /* ElixirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElixirTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F014075C1A1BAB9C0036A69A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01407781A1BAB9C0036A69A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F01407561A1BAB9C0036A69A = {
+			isa = PBXGroup;
+			children = (
+				F01407611A1BAB9C0036A69A /* Elixir */,
+				F014077E1A1BAB9C0036A69A /* ElixirTests */,
+				F01407601A1BAB9C0036A69A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F01407601A1BAB9C0036A69A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F014075F1A1BAB9C0036A69A /* Elixir.app */,
+				F014077B1A1BAB9C0036A69A /* ElixirTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F01407611A1BAB9C0036A69A /* Elixir */ = {
+			isa = PBXGroup;
+			children = (
+				F01407661A1BAB9C0036A69A /* AppDelegate.h */,
+				F01407671A1BAB9C0036A69A /* AppDelegate.m */,
+				F014076C1A1BAB9C0036A69A /* ViewController.h */,
+				F014076D1A1BAB9C0036A69A /* ViewController.m */,
+				F014076F1A1BAB9C0036A69A /* Main.storyboard */,
+				F01407721A1BAB9C0036A69A /* Images.xcassets */,
+				F01407741A1BAB9C0036A69A /* LaunchScreen.xib */,
+				F01407691A1BAB9C0036A69A /* Elixir.xcdatamodeld */,
+				F01407621A1BAB9C0036A69A /* Supporting Files */,
+			);
+			path = Elixir;
+			sourceTree = "<group>";
+		};
+		F01407621A1BAB9C0036A69A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01407631A1BAB9C0036A69A /* Info.plist */,
+				F01407641A1BAB9C0036A69A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F014077E1A1BAB9C0036A69A /* ElixirTests */ = {
+			isa = PBXGroup;
+			children = (
+				F01407811A1BAB9C0036A69A /* ElixirTests.m */,
+				F014077F1A1BAB9C0036A69A /* Supporting Files */,
+			);
+			path = ElixirTests;
+			sourceTree = "<group>";
+		};
+		F014077F1A1BAB9C0036A69A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01407801A1BAB9C0036A69A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F014075E1A1BAB9C0036A69A /* Elixir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01407851A1BAB9C0036A69A /* Build configuration list for PBXNativeTarget "Elixir" */;
+			buildPhases = (
+				F014075B1A1BAB9C0036A69A /* Sources */,
+				F014075C1A1BAB9C0036A69A /* Frameworks */,
+				F014075D1A1BAB9C0036A69A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elixir;
+			productName = Elixir;
+			productReference = F014075F1A1BAB9C0036A69A /* Elixir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F014077A1A1BAB9C0036A69A /* ElixirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01407881A1BAB9C0036A69A /* Build configuration list for PBXNativeTarget "ElixirTests" */;
+			buildPhases = (
+				F01407771A1BAB9C0036A69A /* Sources */,
+				F01407781A1BAB9C0036A69A /* Frameworks */,
+				F01407791A1BAB9C0036A69A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F014077D1A1BAB9C0036A69A /* PBXTargetDependency */,
+			);
+			name = ElixirTests;
+			productName = ElixirTests;
+			productReference = F014077B1A1BAB9C0036A69A /* ElixirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F01407571A1BAB9C0036A69A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = jasonl.biz;
+				TargetAttributes = {
+					F014075E1A1BAB9C0036A69A = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					F014077A1A1BAB9C0036A69A = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = F014075E1A1BAB9C0036A69A;
+					};
+				};
+			};
+			buildConfigurationList = F014075A1A1BAB9C0036A69A /* Build configuration list for PBXProject "Elixir" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F01407561A1BAB9C0036A69A;
+			productRefGroup = F01407601A1BAB9C0036A69A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F014075E1A1BAB9C0036A69A /* Elixir */,
+				F014077A1A1BAB9C0036A69A /* ElixirTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F014075D1A1BAB9C0036A69A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01407711A1BAB9C0036A69A /* Main.storyboard in Resources */,
+				F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */,
+				F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01407791A1BAB9C0036A69A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F014075B1A1BAB9C0036A69A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01407681A1BAB9C0036A69A /* AppDelegate.m in Sources */,
+				F014076B1A1BAB9C0036A69A /* Elixir.xcdatamodeld in Sources */,
+				F014076E1A1BAB9C0036A69A /* ViewController.m in Sources */,
+				F01407651A1BAB9C0036A69A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01407771A1BAB9C0036A69A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01407821A1BAB9C0036A69A /* ElixirTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F014077D1A1BAB9C0036A69A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F014075E1A1BAB9C0036A69A /* Elixir */;
+			targetProxy = F014077C1A1BAB9C0036A69A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F014076F1A1BAB9C0036A69A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F01407701A1BAB9C0036A69A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F01407741A1BAB9C0036A69A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F01407751A1BAB9C0036A69A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F01407831A1BAB9C0036A69A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F01407841A1BAB9C0036A69A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F01407861A1BAB9C0036A69A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Elixir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F01407871A1BAB9C0036A69A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Elixir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F01407891A1BAB9C0036A69A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ElixirTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elixir.app/Elixir";
+			};
+			name = Debug;
+		};
+		F014078A1A1BAB9C0036A69A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ElixirTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Elixir.app/Elixir";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F014075A1A1BAB9C0036A69A /* Build configuration list for PBXProject "Elixir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01407831A1BAB9C0036A69A /* Debug */,
+				F01407841A1BAB9C0036A69A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F01407851A1BAB9C0036A69A /* Build configuration list for PBXNativeTarget "Elixir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01407861A1BAB9C0036A69A /* Debug */,
+				F01407871A1BAB9C0036A69A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F01407881A1BAB9C0036A69A /* Build configuration list for PBXNativeTarget "ElixirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01407891A1BAB9C0036A69A /* Debug */,
+				F014078A1A1BAB9C0036A69A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F01407691A1BAB9C0036A69A /* Elixir.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F014076A1A1BAB9C0036A69A /* Elixir.xcdatamodel */,
+			);
+			currentVersion = F014076A1A1BAB9C0036A69A /* Elixir.xcdatamodel */;
+			path = Elixir.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F01407571A1BAB9C0036A69A /* Project object */;
+}

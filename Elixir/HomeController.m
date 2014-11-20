@@ -6,17 +6,24 @@
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "HomeController.h"
 
-@interface ViewController ()
+@interface HomeController ()
 
 @end
 
-@implementation ViewController
+@implementation HomeController
+
+@synthesize tvWelcome;
+@synthesize tvDisclaimer;
+@synthesize svMyView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [tvWelcome sizeToFit];
+    [tvDisclaimer sizeToFit];
+
+    NSLog(@"view loaded");
 }
 
 - (void)didReceiveMemoryWarning {

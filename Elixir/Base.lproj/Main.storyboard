@@ -1,25 +1,477 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IES-3b-73y">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Home-->
+        <scene sceneID="hjU-vO-Oic">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="Pf5-uD-AYk" customClass="HomeController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="E81-oF-0GG"/>
+                        <viewControllerLayoutGuide type="bottom" id="SER-SX-4qr"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="GvZ-TA-kc3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FQ0-PA-QMt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Elixir" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7u3-YA-LzL">
+                                        <rect key="frame" x="282" y="57" width="37" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="by MET HiLab" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFE-oc-UUq">
+                                        <rect key="frame" x="264" y="79" width="73" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Suc-aX-2bM">
+                                        <rect key="frame" x="26" y="108" width="550" height="260"/>
+                                        <color key="backgroundColor" red="1" green="0.61802441419999998" blue="0.56123023809999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">The Antidote Application (AA) is a computational system that automatically recommends individualized antidote treatment regimen and patient-specific doses based on patient-specific parameters. The AA is available in two formats: a standalone downloadable application for offline use and an online web application. It also provides a reporting solution linked to Poison Control and the Federal Adverse Event Reporting System. The system is well referenced and exclusively for toxicology. The antidotes and toxins covered by AA include those recommended for common use in hospitals as described by Dart et al, 2009.
+
+To begin using the Antidote Application, click on the Antidotes or Toxins tabs in the upper right and follow the instructions.
+
+This project was designed by Jon Long, R.Ph., and Allen Yingyuan Zhang under the direction of Guanglan Zhang, PhD., and Vladimir Brusic, PhD. as a part of the Boston University MET HI Lab program.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrY-dX-jAy">
+                                        <rect key="frame" x="25" y="403" width="550" height="140"/>
+                                        <color key="backgroundColor" red="0.84705882349999995" green="0.93333333330000001" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <string key="text">Disclaimer
+
+This educational program is not intended for individual patient care. If you are caring for a known or suspected poisoned patient, please contact your regional poison control center for patient specific management by dialing 1-800-222-1222.</string>
+                                        <color key="textColor" red="0.20392156859999999" green="0.40784313729999999" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rFE-oc-UUq" firstAttribute="top" secondItem="7u3-YA-LzL" secondAttribute="bottom" constant="5" id="2oj-pN-3FH"/>
+                                    <constraint firstItem="Suc-aX-2bM" firstAttribute="top" secondItem="rFE-oc-UUq" secondAttribute="bottom" constant="8" id="9xd-gw-8ew"/>
+                                    <constraint firstAttribute="width" secondItem="Suc-aX-2bM" secondAttribute="width" id="GXT-jK-pWp"/>
+                                    <constraint firstItem="7u3-YA-LzL" firstAttribute="top" secondItem="FQ0-PA-QMt" secondAttribute="top" constant="30" id="Lwd-dk-V0T"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZrY-dX-jAy" secondAttribute="bottom" constant="70" id="OjI-qS-Sbe"/>
+                                    <constraint firstAttribute="centerX" secondItem="7u3-YA-LzL" secondAttribute="centerX" constant="0.5" id="X3g-u1-cfK"/>
+                                    <constraint firstAttribute="centerX" secondItem="Suc-aX-2bM" secondAttribute="centerX" id="Z0C-9B-KzN"/>
+                                    <constraint firstAttribute="width" secondItem="ZrY-dX-jAy" secondAttribute="width" id="ZKo-FK-aVr"/>
+                                    <constraint firstAttribute="centerX" secondItem="ZrY-dX-jAy" secondAttribute="centerX" constant="1" id="g1y-Cd-Qag"/>
+                                    <constraint firstItem="ZrY-dX-jAy" firstAttribute="top" secondItem="Suc-aX-2bM" secondAttribute="bottom" constant="35" id="nWg-D5-mhM"/>
+                                    <constraint firstAttribute="centerX" secondItem="rFE-oc-UUq" secondAttribute="centerX" constant="0.5" id="vUV-2A-HUL"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="551"/>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FQ0-PA-QMt" firstAttribute="height" secondItem="GvZ-TA-kc3" secondAttribute="height" id="6qr-Uv-e53"/>
+                            <constraint firstItem="FQ0-PA-QMt" firstAttribute="width" secondItem="GvZ-TA-kc3" secondAttribute="width" id="Myk-43-IGY"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="6Pn-oD-r2c"/>
+                    <connections>
+                        <outlet property="svMyView" destination="FQ0-PA-QMt" id="7xT-KO-Ebu"/>
+                        <outlet property="tvDisclaimer" destination="ZrY-dX-jAy" id="1V6-iY-iv6"/>
+                        <outlet property="tvWelcome" destination="Suc-aX-2bM" id="lSR-o3-B1e"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBz-dT-eUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-4443" y="681"/>
+        </scene>
+        <!--Drug-->
+        <scene sceneID="7ce-CR-dlf">
+            <objects>
+                <navigationController id="61w-hw-n2m" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Drug" id="WVY-R2-MCm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v1u-SM-j1t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ug4-AO-jeO" kind="relationship" relationship="rootViewController" id="Vek-D9-H2O"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQ4-XQ-GIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2814" y="964.5"/>
+        </scene>
+        <!--Drug-->
+        <scene sceneID="00X-ep-d2g">
+            <objects>
+                <viewController storyboardIdentifier="DrugViewControllerId" id="Ug4-AO-jeO" customClass="DrugViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nea-ab-wZN"/>
+                        <viewControllerLayoutGuide type="bottom" id="JI7-d5-gFQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SVM-pX-NR5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-ig-Xd7">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNN-CQ-WMF">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="206" id="Q5n-8W-UZO">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="220"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="240" id="ppA-Wq-MpS"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="在過去幾個月中，">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Opera Max">
+                                        <attributes>
+                                            <color key="NSColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <url key="NSLink" string="http://chinese.engadget.com/2014/02/23/opera-max/"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="為許多地區的">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Android ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="用戶帶去了非常實用的流量節省功能，讓大家在瀏覽網頁時，可以節省最多">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 50% ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="的數據用量（包括圖片、影片）。之後">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="與聯發科的合作">
+                                        <attributes>
+                                            <color key="NSColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <url key="NSLink" string="http://chinese.engadget.com/2014/09/18/mediatek-embeds-opera-max-in-soc/"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.16470588235294117" green="0.52549019607843139" blue="0.75294117647058822" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="更是讓它如虎添翼，影響力又更上一層樓。時至今日，官方再進一步，他們新增了">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" 16 ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="個">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Opera Max ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="的適用地區，讓香港、台灣、日本、新加坡、澳大利亞等地的使用者也能夠更好地控制自己的上網流量了。有需要的朋友可以直接去">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Google Play ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="下載，上架的版本已經支援">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" Lollipop ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="囉。">
+                                        <attributes>
+                                            <color key="NSColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="STHeitiTC-Light"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.14901960784313725" green="0.14901960784313725" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Q5n-8W-UZO"/>
+                                        <exclude reference="ppA-Wq-MpS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <mask key="constraints">
+                                        <include reference="Q5n-8W-UZO"/>
+                                        <exclude reference="ppA-Wq-MpS"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-Xq-q1r">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="VwX-FK-XbX"/>
+                                </constraints>
+                                <sections/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VwX-FK-XbX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="VwX-FK-XbX"/>
+                                    </mask>
+                                </variation>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KZ8-Xq-q1r" firstAttribute="top" secondItem="nNN-CQ-WMF" secondAttribute="bottom" constant="8" id="36z-WP-XX3"/>
+                            <constraint firstAttribute="centerX" secondItem="WNz-ig-Xd7" secondAttribute="centerX" id="3wT-uh-5VJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nNN-CQ-WMF" secondAttribute="trailing" constant="64" id="SOf-3p-LXA">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="centerX" secondItem="KZ8-Xq-q1r" secondAttribute="centerX" id="Vq6-sm-XEC"/>
+                            <constraint firstItem="nNN-CQ-WMF" firstAttribute="leading" secondItem="SVM-pX-NR5" secondAttribute="leadingMargin" constant="64" id="cKc-Qv-gLL">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="nNN-CQ-WMF" firstAttribute="top" secondItem="WNz-ig-Xd7" secondAttribute="bottom" constant="8" id="hc9-Mt-ce6"/>
+                            <constraint firstItem="WNz-ig-Xd7" firstAttribute="top" secondItem="nea-ab-wZN" secondAttribute="bottom" constant="8" id="imZ-g4-YGc"/>
+                            <constraint firstAttribute="width" secondItem="KZ8-Xq-q1r" secondAttribute="width" id="wMF-i6-AkR"/>
+                            <constraint firstAttribute="centerX" secondItem="nNN-CQ-WMF" secondAttribute="centerX" id="y3r-eX-cWs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="WNz-ig-Xd7"/>
+                                <exclude reference="nNN-CQ-WMF"/>
+                                <exclude reference="KZ8-Xq-q1r"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3wT-uh-5VJ"/>
+                                <exclude reference="imZ-g4-YGc"/>
+                                <exclude reference="SOf-3p-LXA"/>
+                                <exclude reference="cKc-Qv-gLL"/>
+                                <exclude reference="hc9-Mt-ce6"/>
+                                <exclude reference="y3r-eX-cWs"/>
+                                <exclude reference="36z-WP-XX3"/>
+                                <exclude reference="Vq6-sm-XEC"/>
+                                <exclude reference="wMF-i6-AkR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="WNz-ig-Xd7"/>
+                                <include reference="nNN-CQ-WMF"/>
+                                <include reference="KZ8-Xq-q1r"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3wT-uh-5VJ"/>
+                                <include reference="imZ-g4-YGc"/>
+                                <include reference="SOf-3p-LXA"/>
+                                <include reference="cKc-Qv-gLL"/>
+                                <include reference="hc9-Mt-ce6"/>
+                                <exclude reference="y3r-eX-cWs"/>
+                                <include reference="36z-WP-XX3"/>
+                                <include reference="Vq6-sm-XEC"/>
+                                <include reference="wMF-i6-AkR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drug" id="5Uy-Oe-dOH"/>
+                    <navigationItem key="navigationItem" id="gBy-Em-hUq"/>
+                    <connections>
+                        <outlet property="lbTitle" destination="WNz-ig-Xd7" id="RHH-s5-2nQ"/>
+                        <outlet property="tbOptionTable" destination="KZ8-Xq-q1r" id="KDZ-0c-CpV"/>
+                        <outlet property="tvQuestionText" destination="nNN-CQ-WMF" id="0Dl-bZ-dDb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phr-I0-7GQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1590" y="964.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dft-uP-QDv">
+            <objects>
+                <tabBarController id="IES-3b-73y" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="KaW-lQ-VGn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Pf5-uD-AYk" kind="relationship" relationship="viewControllers" id="hfh-4L-fj8"/>
+                        <segue destination="61w-hw-n2m" kind="relationship" relationship="viewControllers" id="Ba9-Qs-xvO"/>
+                        <segue destination="XeQ-xi-WHr" kind="relationship" relationship="viewControllers" id="qHd-UH-cDC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aIj-R9-vD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2829" y="231"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="GeW-Bw-50Q">
+            <objects>
+                <viewController id="XeQ-xi-WHr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8I8-ek-kU0"/>
+                        <viewControllerLayoutGuide type="bottom" id="edg-zx-ZIY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="17K-WX-CbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" id="21Z-bF-b4i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APr-A4-QDt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1938" y="231"/>
         </scene>
     </scenes>
 </document>

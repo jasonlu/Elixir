@@ -8,13 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		F01407651A1BAB9C0036A69A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407641A1BAB9C0036A69A /* main.m */; };
-		F01407681A1BAB9C0036A69A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407671A1BAB9C0036A69A /* AppDelegate.m */; };
+		F01407681A1BAB9C0036A69A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = F01407671A1BAB9C0036A69A /* AppDelegate.mm */; };
 		F014076B1A1BAB9C0036A69A /* Elixir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F01407691A1BAB9C0036A69A /* Elixir.xcdatamodeld */; };
-		F014076E1A1BAB9C0036A69A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014076D1A1BAB9C0036A69A /* ViewController.m */; };
+		F014076E1A1BAB9C0036A69A /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F014076D1A1BAB9C0036A69A /* HomeController.m */; };
 		F01407711A1BAB9C0036A69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F014076F1A1BAB9C0036A69A /* Main.storyboard */; };
 		F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01407721A1BAB9C0036A69A /* Images.xcassets */; };
 		F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01407741A1BAB9C0036A69A /* LaunchScreen.xib */; };
 		F01407821A1BAB9C0036A69A /* ElixirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407811A1BAB9C0036A69A /* ElixirTests.m */; };
+		F09306831A1CF58F00071C68 /* Acetylcysteine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306691A1CF58F00071C68 /* Acetylcysteine.cpp */; };
+		F09306841A1CF58F00071C68 /* Antidote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F093066B1A1CF58F00071C68 /* Antidote.cpp */; };
+		F09306851A1CF58F00071C68 /* Atropine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F093066D1A1CF58F00071C68 /* Atropine.cpp */; };
+		F09306861A1CF58F00071C68 /* BabyBIG.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F093066F1A1CF58F00071C68 /* BabyBIG.cpp */; };
+		F09306871A1CF58F00071C68 /* BATbotulism.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306711A1CF58F00071C68 /* BATbotulism.cpp */; };
+		F09306881A1CF58F00071C68 /* BlackWidow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306731A1CF58F00071C68 /* BlackWidow.cpp */; };
+		F09306891A1CF58F00071C68 /* CaChloride.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306751A1CF58F00071C68 /* CaChloride.cpp */; };
+		F093068A1A1CF58F00071C68 /* CaDTPA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306771A1CF58F00071C68 /* CaDTPA.cpp */; };
+		F093068B1A1CF58F00071C68 /* CoralSnake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306791A1CF58F00071C68 /* CoralSnake.cpp */; };
+		F093068C1A1CF58F00071C68 /* CrotalidaeOvine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F093067B1A1CF58F00071C68 /* CrotalidaeOvine.cpp */; };
+		F093068D1A1CF58F00071C68 /* CyanideToxicity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F093067D1A1CF58F00071C68 /* CyanideToxicity.cpp */; };
+		F093068E1A1CF58F00071C68 /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = F093067F1A1CF58F00071C68 /* dictionary.txt */; };
+		F093068F1A1CF58F00071C68 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306801A1CF58F00071C68 /* main.cpp */; };
+		F09306901A1CF58F00071C68 /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09306811A1CF58F00071C68 /* Question.cpp */; };
+		F09306931A1D009D00071C68 /* Dote.mm in Sources */ = {isa = PBXBuildFile; fileRef = F09306921A1D009D00071C68 /* Dote.mm */; };
+		F09306961A1D0A4700071C68 /* MYQuestion.mm in Sources */ = {isa = PBXBuildFile; fileRef = F09306951A1D0A4700071C68 /* MYQuestion.mm */; };
+		F0C96C141A1C579700142684 /* DrugViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0C96C131A1C579700142684 /* DrugViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,16 +49,48 @@
 		F01407631A1BAB9C0036A69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01407641A1BAB9C0036A69A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F01407661A1BAB9C0036A69A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		F01407671A1BAB9C0036A69A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F01407671A1BAB9C0036A69A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		F014076A1A1BAB9C0036A69A /* Elixir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elixir.xcdatamodel; sourceTree = "<group>"; };
-		F014076C1A1BAB9C0036A69A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F014076D1A1BAB9C0036A69A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F014076C1A1BAB9C0036A69A /* HomeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		F014076D1A1BAB9C0036A69A /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		F01407701A1BAB9C0036A69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01407721A1BAB9C0036A69A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F01407751A1BAB9C0036A69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F014077B1A1BAB9C0036A69A /* ElixirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01407801A1BAB9C0036A69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01407811A1BAB9C0036A69A /* ElixirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElixirTests.m; sourceTree = "<group>"; };
+		F09306691A1CF58F00071C68 /* Acetylcysteine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Acetylcysteine.cpp; sourceTree = "<group>"; };
+		F093066A1A1CF58F00071C68 /* Acetylcysteine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acetylcysteine.h; sourceTree = "<group>"; };
+		F093066B1A1CF58F00071C68 /* Antidote.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Antidote.cpp; sourceTree = "<group>"; };
+		F093066C1A1CF58F00071C68 /* Antidote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Antidote.h; sourceTree = "<group>"; };
+		F093066D1A1CF58F00071C68 /* Atropine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Atropine.cpp; sourceTree = "<group>"; };
+		F093066E1A1CF58F00071C68 /* Atropine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atropine.h; sourceTree = "<group>"; };
+		F093066F1A1CF58F00071C68 /* BabyBIG.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BabyBIG.cpp; sourceTree = "<group>"; };
+		F09306701A1CF58F00071C68 /* BabyBIG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBIG.h; sourceTree = "<group>"; };
+		F09306711A1CF58F00071C68 /* BATbotulism.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BATbotulism.cpp; sourceTree = "<group>"; };
+		F09306721A1CF58F00071C68 /* BATbotulism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATbotulism.h; sourceTree = "<group>"; };
+		F09306731A1CF58F00071C68 /* BlackWidow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlackWidow.cpp; sourceTree = "<group>"; };
+		F09306741A1CF58F00071C68 /* BlackWidow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlackWidow.h; sourceTree = "<group>"; };
+		F09306751A1CF58F00071C68 /* CaChloride.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CaChloride.cpp; sourceTree = "<group>"; };
+		F09306761A1CF58F00071C68 /* CaChloride.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaChloride.h; sourceTree = "<group>"; };
+		F09306771A1CF58F00071C68 /* CaDTPA.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CaDTPA.cpp; sourceTree = "<group>"; };
+		F09306781A1CF58F00071C68 /* CaDTPA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaDTPA.h; sourceTree = "<group>"; };
+		F09306791A1CF58F00071C68 /* CoralSnake.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CoralSnake.cpp; sourceTree = "<group>"; };
+		F093067A1A1CF58F00071C68 /* CoralSnake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoralSnake.h; sourceTree = "<group>"; };
+		F093067B1A1CF58F00071C68 /* CrotalidaeOvine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CrotalidaeOvine.cpp; sourceTree = "<group>"; };
+		F093067C1A1CF58F00071C68 /* CrotalidaeOvine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrotalidaeOvine.h; sourceTree = "<group>"; };
+		F093067D1A1CF58F00071C68 /* CyanideToxicity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CyanideToxicity.cpp; sourceTree = "<group>"; };
+		F093067E1A1CF58F00071C68 /* CyanideToxicity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CyanideToxicity.h; sourceTree = "<group>"; };
+		F093067F1A1CF58F00071C68 /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		F09306801A1CF58F00071C68 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F09306811A1CF58F00071C68 /* Question.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Question.cpp; sourceTree = "<group>"; };
+		F09306821A1CF58F00071C68 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		F09306911A1D009D00071C68 /* Dote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dote.h; sourceTree = "<group>"; };
+		F09306921A1D009D00071C68 /* Dote.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dote.mm; sourceTree = "<group>"; };
+		F09306941A1D0A4700071C68 /* MYQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYQuestion.h; sourceTree = "<group>"; };
+		F09306951A1D0A4700071C68 /* MYQuestion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MYQuestion.mm; sourceTree = "<group>"; };
+		F0C96C121A1C579700142684 /* DrugViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrugViewController.h; sourceTree = "<group>"; };
+		F0C96C131A1C579700142684 /* DrugViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DrugViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,15 +132,22 @@
 		F01407611A1BAB9C0036A69A /* Elixir */ = {
 			isa = PBXGroup;
 			children = (
+				F09306681A1CF58F00071C68 /* libs */,
 				F01407661A1BAB9C0036A69A /* AppDelegate.h */,
-				F01407671A1BAB9C0036A69A /* AppDelegate.m */,
-				F014076C1A1BAB9C0036A69A /* ViewController.h */,
-				F014076D1A1BAB9C0036A69A /* ViewController.m */,
+				F01407671A1BAB9C0036A69A /* AppDelegate.mm */,
+				F014076C1A1BAB9C0036A69A /* HomeController.h */,
+				F014076D1A1BAB9C0036A69A /* HomeController.m */,
 				F014076F1A1BAB9C0036A69A /* Main.storyboard */,
 				F01407721A1BAB9C0036A69A /* Images.xcassets */,
 				F01407741A1BAB9C0036A69A /* LaunchScreen.xib */,
 				F01407691A1BAB9C0036A69A /* Elixir.xcdatamodeld */,
 				F01407621A1BAB9C0036A69A /* Supporting Files */,
+				F0C96C121A1C579700142684 /* DrugViewController.h */,
+				F0C96C131A1C579700142684 /* DrugViewController.mm */,
+				F09306911A1D009D00071C68 /* Dote.h */,
+				F09306921A1D009D00071C68 /* Dote.mm */,
+				F09306941A1D0A4700071C68 /* MYQuestion.h */,
+				F09306951A1D0A4700071C68 /* MYQuestion.mm */,
 			);
 			path = Elixir;
 			sourceTree = "<group>";
@@ -120,6 +176,39 @@
 				F01407801A1BAB9C0036A69A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F09306681A1CF58F00071C68 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				F09306691A1CF58F00071C68 /* Acetylcysteine.cpp */,
+				F093066A1A1CF58F00071C68 /* Acetylcysteine.h */,
+				F093066B1A1CF58F00071C68 /* Antidote.cpp */,
+				F093066C1A1CF58F00071C68 /* Antidote.h */,
+				F093066D1A1CF58F00071C68 /* Atropine.cpp */,
+				F093066E1A1CF58F00071C68 /* Atropine.h */,
+				F093066F1A1CF58F00071C68 /* BabyBIG.cpp */,
+				F09306701A1CF58F00071C68 /* BabyBIG.h */,
+				F09306711A1CF58F00071C68 /* BATbotulism.cpp */,
+				F09306721A1CF58F00071C68 /* BATbotulism.h */,
+				F09306731A1CF58F00071C68 /* BlackWidow.cpp */,
+				F09306741A1CF58F00071C68 /* BlackWidow.h */,
+				F09306751A1CF58F00071C68 /* CaChloride.cpp */,
+				F09306761A1CF58F00071C68 /* CaChloride.h */,
+				F09306771A1CF58F00071C68 /* CaDTPA.cpp */,
+				F09306781A1CF58F00071C68 /* CaDTPA.h */,
+				F09306791A1CF58F00071C68 /* CoralSnake.cpp */,
+				F093067A1A1CF58F00071C68 /* CoralSnake.h */,
+				F093067B1A1CF58F00071C68 /* CrotalidaeOvine.cpp */,
+				F093067C1A1CF58F00071C68 /* CrotalidaeOvine.h */,
+				F093067D1A1CF58F00071C68 /* CyanideToxicity.cpp */,
+				F093067E1A1CF58F00071C68 /* CyanideToxicity.h */,
+				F093067F1A1CF58F00071C68 /* dictionary.txt */,
+				F09306801A1CF58F00071C68 /* main.cpp */,
+				F09306811A1CF58F00071C68 /* Question.cpp */,
+				F09306821A1CF58F00071C68 /* Question.h */,
+			);
+			path = libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +293,7 @@
 			files = (
 				F01407711A1BAB9C0036A69A /* Main.storyboard in Resources */,
 				F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */,
+				F093068E1A1CF58F00071C68 /* dictionary.txt in Resources */,
 				F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,10 +312,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01407681A1BAB9C0036A69A /* AppDelegate.m in Sources */,
+				F093068A1A1CF58F00071C68 /* CaDTPA.cpp in Sources */,
+				F0C96C141A1C579700142684 /* DrugViewController.mm in Sources */,
+				F01407681A1BAB9C0036A69A /* AppDelegate.mm in Sources */,
+				F093068C1A1CF58F00071C68 /* CrotalidaeOvine.cpp in Sources */,
+				F09306861A1CF58F00071C68 /* BabyBIG.cpp in Sources */,
+				F093068F1A1CF58F00071C68 /* main.cpp in Sources */,
+				F093068B1A1CF58F00071C68 /* CoralSnake.cpp in Sources */,
+				F09306841A1CF58F00071C68 /* Antidote.cpp in Sources */,
+				F09306871A1CF58F00071C68 /* BATbotulism.cpp in Sources */,
+				F09306891A1CF58F00071C68 /* CaChloride.cpp in Sources */,
 				F014076B1A1BAB9C0036A69A /* Elixir.xcdatamodeld in Sources */,
-				F014076E1A1BAB9C0036A69A /* ViewController.m in Sources */,
+				F014076E1A1BAB9C0036A69A /* HomeController.m in Sources */,
+				F09306931A1D009D00071C68 /* Dote.mm in Sources */,
 				F01407651A1BAB9C0036A69A /* main.m in Sources */,
+				F09306901A1CF58F00071C68 /* Question.cpp in Sources */,
+				F09306881A1CF58F00071C68 /* BlackWidow.cpp in Sources */,
+				F09306831A1CF58F00071C68 /* Acetylcysteine.cpp in Sources */,
+				F09306961A1D0A4700071C68 /* MYQuestion.mm in Sources */,
+				F093068D1A1CF58F00071C68 /* CyanideToxicity.cpp in Sources */,
+				F09306851A1CF58F00071C68 /* Atropine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +522,7 @@
 				F01407871A1BAB9C0036A69A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F01407881A1BAB9C0036A69A /* Build configuration list for PBXNativeTarget "ElixirTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +531,7 @@
 				F014078A1A1BAB9C0036A69A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

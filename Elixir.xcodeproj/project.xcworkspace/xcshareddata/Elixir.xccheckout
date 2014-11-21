@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8149B4E0-4905-4480-B2B3-1FDE765263F3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Elixir</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BE5FE7FACE2121434A357C5AA811AE7A1A16C062</key>
+		<string>github.com:jasonlu/Elixir.git</string>
+		<key>D9BF504BDF19062AFD434B0E0B0F2CF77EF252C7</key>
+		<string>github.com:jasonlu/libAntidote.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Elixir.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BE5FE7FACE2121434A357C5AA811AE7A1A16C062</key>
+		<string>../..</string>
+		<key>D9BF504BDF19062AFD434B0E0B0F2CF77EF252C7</key>
+		<string>../../../libAntidote</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:jasonlu/Elixir.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BE5FE7FACE2121434A357C5AA811AE7A1A16C062</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BE5FE7FACE2121434A357C5AA811AE7A1A16C062</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Elixir</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9BF504BDF19062AFD434B0E0B0F2CF77EF252C7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>libAntidote</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "DrugViewController.h"
+#import "QuestionViewController.h"
+#import "DrugsTableViewController.h"
 #import "Dote.h"
 
 #ifdef __cplusplus
@@ -17,24 +18,31 @@
 #endif
 
 
-@interface DrugViewController () {
+@interface QuestionViewController () {
     libAntidote::Question *question;
 }
 
 @end
 
-@implementation DrugViewController
+@implementation QuestionViewController
+@synthesize btnNext;
 @synthesize lbTitle;
 @synthesize counter;
 @synthesize tvQuestionText;
 @synthesize tbOptionTable;
 @synthesize appDelegate;
+@synthesize vInputView;
+@synthesize vResponseView;
+@synthesize tfInputvalue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     Dote *dote = [Dote sharedInstance];
+    if(dote == nil) {
+        return;
+    }
     //[dote setDrug:@"Acetylcysteine"];
     //NSString *ref = [dote getRef];
     
@@ -57,17 +65,44 @@
         [options addObject:opt];
     }
     optionArray = [[NSArray alloc] initWithArray:options];
-    lbTitle.text = [NSString stringWithFormat:@"%d", counter];
+    lbTitle.text = [dote name];
     tbOptionTable.delegate = self;
     tbOptionTable.dataSource = self;
-    NSLog(@"DrugVuewController viewDidLoad");
+    std::string type = question->getType();
+    NSLog(@"type:: %@", [NSString stringWithCString:type.c_str() encoding: [NSString defaultCStringEncoding]]);
+    
+    if(type == "numbers") {
+        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+        std::string unitType = question->getUnitType();
+        label.text = [NSString stringWithCString: unitType.c_str() encoding:[NSString defaultCStringEncoding]];
+        label.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+        [label sizeToFit];
+        tfInputvalue.rightViewMode = UITextFieldViewModeAlways;
+        tfInputvalue.rightView = label;
+        double ansValue = question->getAnswerFloat();
+        if(ansValue == -1) {
+            tfInputvalue.text = @"";
+        } else {
+            tfInputvalue.text = [NSString stringWithFormat:@"%f", ansValue];
+        }
+        
+        [vResponseView setHidden:YES];
+        [tbOptionTable setHidden:YES];
+        [tfInputvalue becomeFirstResponder];
+        [btnNext setEnabled:NO];
+    } else if(type == "options" || type == "yesno") {
+        [vResponseView setHidden:YES];
+        [vInputView setHidden:YES];
+    } else if(type == "end" || type == "warning" || type == "info") {
+        [tbOptionTable setHidden:YES];
+        [vInputView setHidden:YES];
+    }
+    if(type == "end") {
+        btnNext.titleLabel.text = @"Finish";
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-
-    
-    
-    lbTitle.text = [NSString stringWithFormat:@"%d", counter];
     NSLog(@"DrugVuewController viewWillAppear");
 }
 
@@ -91,23 +126,48 @@
 */
 
 - (IBAction)btnNextClicked:(UIButton *)sender {
-    //lbTitle.text = [NSString stringWithFormat:@"%d", counter++];
-    counter+= 10;
-    // Load storyboard.
-    
+    NSString *stringValue = [tfInputvalue text];
+    double value = [stringValue doubleValue];
+    if( value < question->getMin() || value > question->getMax() ) {
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Value our of range"
+                                                          message:@"The value you inputed is out of range, please try again."
+                                                         delegate:nil
+                                                cancelButtonTitle:@"OK"
+                                                otherButtonTitles:nil];
+        
+        [message show];
+        return;
+    } else {
+        std::string res = [stringValue UTF8String];
+        question->setAnswer(res);
+        [self showNextQuestion];
+    }
+}
+
+- (IBAction)tfEditingChanged:(UITextField *)sender {
+    if([[sender text] isEqualToString: @""]) {
+        [btnNext setEnabled:NO];
+    } else {
+        [btnNext setEnabled:YES];
+    }
 }
 
 - (void)showNextQuestion {
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
                                                          bundle:nil];
-    // Get instance of ViewController from storyboard.
-    DrugViewController *add = [storyboard instantiateViewControllerWithIdentifier:@"DrugViewControllerId"];
-    // Allocate AddProjectViewController
-    // add = [[DrugViewController alloc] init];
-    // [add loadView];
     
-    // Adds the above view controller to the stack and pushes it into view
-    [self.navigationController pushViewController:add animated:YES];
+    if(question->getType() != "end") {
+        // if(question->hasMoreOptions()) {
+        // Get instance of ViewController from storyboard.
+        QuestionViewController *add = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewControllerId"];
+        // Allocate AddProjectViewController
+        // add = [[DrugViewController alloc] init];
+        // [add loadView];
+        // Adds the above view controller to the stack and pushes it into view
+        [self.navigationController pushViewController:add animated:YES];
+    } else {
+        [self.navigationController popToRootViewControllerAnimated:YES];
+    }
 }
 
 
@@ -136,12 +196,9 @@
     // Configure the cell...
     NSString *text = [optionArray objectAtIndex:indexPath.row];
     cell.textLabel.text = text;//[NSString stringWithFormat:];
-    NSLog(@"tableView:tableView cellForRowAtIndexPath:indexPath, text: %@", text);
     double tableViewHeight = [tbOptionTable contentSize].height;
-    NSLog(@"tableViewHeight: %f", tableViewHeight);
     CGRect frame = tbOptionTable.frame;
-    frame.size.height = tableViewHeight;
-    [tbOptionTable setTranslatesAutoresizingMaskIntoConstraints:YES];
+    frame.size.height =  tableViewHeight;
     [tbOptionTable setFrame: frame];
     return cell;
 }

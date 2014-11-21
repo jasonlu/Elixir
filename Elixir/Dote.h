@@ -12,20 +12,28 @@
 
 #include "Acetylcysteine.h"
 #include "Atropine.h"
+#include "BabyBIG.h"
+#include "BATbotulism.h"
+#include "BlackWidow.h"
+#include "CaChloride.h"
+#include "CaDTPA.h"
+#include "CoralSnake.h"
+#include "CrotalidaeOvine.h"
+#include "CyanideToxicity.h"
+#include "Deferoxamine.h"
+#include "DigiFab.h"
+
+
 
 #endif
 
-
-
-//Forward declare struct
-struct CPPMembers;
 
 @interface Dote : NSObject {
     //opaque pointer to store cpp members
     //struct CPPMembers *cppMembers;
 }
 
-@property (nonatomic) struct CPPMembers *cppMembers;
+@property (nonatomic, readonly) NSString *name;
 
 + (Dote *) sharedInstance;
 - (NSString *)getRef;

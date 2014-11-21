@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-//@class AppDelegate;
 #import "AppDelegate.h"
 
 
-@interface DrugViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+@interface QuestionViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     NSArray *optionArray;
 }
 
@@ -21,8 +20,12 @@
 @property (weak, nonatomic) IBOutlet UITableView *tbOptionTable;
 @property (nonatomic, assign) int counter;
 @property (nonatomic) AppDelegate *appDelegate;
+@property (weak, nonatomic) IBOutlet UIView *vInputView;
+@property (weak, nonatomic) IBOutlet UITextField *tfInputvalue;
+@property (weak, nonatomic) IBOutlet UIView *vResponseView;
 
 
 - (IBAction)btnNextClicked:(UIButton *)sender;
+- (IBAction)tfEditingChanged:(UITextField *)sender;
 
 @end

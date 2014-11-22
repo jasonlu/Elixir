@@ -15,6 +15,7 @@
 		F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01407721A1BAB9C0036A69A /* Images.xcassets */; };
 		F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01407741A1BAB9C0036A69A /* LaunchScreen.xib */; };
 		F01407821A1BAB9C0036A69A /* ElixirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407811A1BAB9C0036A69A /* ElixirTests.m */; };
+		F057CF791A1FDE4B00A5AC29 /* MiscTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F057CF781A1FDE4B00A5AC29 /* MiscTableViewController.m */; };
 		F09306931A1D009D00071C68 /* Dote.mm in Sources */ = {isa = PBXBuildFile; fileRef = F09306921A1D009D00071C68 /* Dote.mm */; };
 		F0A1F28F1A1E8D0B00AC5379 /* Acetylcysteine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F26B1A1E8D0B00AC5379 /* Acetylcysteine.cpp */; };
 		F0A1F2901A1E8D0B00AC5379 /* Antidote.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F26D1A1E8D0B00AC5379 /* Antidote.cpp */; };
@@ -37,6 +38,11 @@
 		F0A1F2A61A1EB25100AC5379 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F2A51A1EB25100AC5379 /* Person.m */; };
 		F0A1F2AC1A1ED91900AC5379 /* DrugsTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F2AB1A1ED91900AC5379 /* DrugsTableViewController.mm */; };
 		F0A1F2AF1A1EF5BF00AC5379 /* EnterParametersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A1F2AE1A1EF5BF00AC5379 /* EnterParametersTableViewController.m */; };
+		F0BB60FB1A1FA57900A1CD5E /* drugs.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BB60FA1A1FA57900A1CD5E /* drugs.plist */; };
+		F0BB60FD1A1FAF5C00A1CD5E /* DrugsTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0BB60FC1A1FAF5C00A1CD5E /* DrugsTableHeader.xib */; };
+		F0BB61001A1FB70500A1CD5E /* BU_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */; };
+		F0BB61021A1FC44D00A1CD5E /* toxins.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0BB61011A1FC44D00A1CD5E /* toxins.plist */; };
+		F0BB61051A1FC5F900A1CD5E /* ToxinsTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0BB61041A1FC5F900A1CD5E /* ToxinsTableViewController.mm */; };
 		F0C96C141A1C579700142684 /* QuestionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0C96C131A1C579700142684 /* QuestionViewController.mm */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +71,8 @@
 		F014077B1A1BAB9C0036A69A /* ElixirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01407801A1BAB9C0036A69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01407811A1BAB9C0036A69A /* ElixirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElixirTests.m; sourceTree = "<group>"; };
+		F057CF771A1FDE4B00A5AC29 /* MiscTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiscTableViewController.h; sourceTree = "<group>"; };
+		F057CF781A1FDE4B00A5AC29 /* MiscTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscTableViewController.m; sourceTree = "<group>"; };
 		F09306911A1D009D00071C68 /* Dote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dote.h; sourceTree = "<group>"; };
 		F09306921A1D009D00071C68 /* Dote.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dote.mm; sourceTree = "<group>"; };
 		F0A1F26B1A1E8D0B00AC5379 /* Acetylcysteine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Acetylcysteine.cpp; sourceTree = "<group>"; };
@@ -109,6 +117,12 @@
 		F0A1F2AB1A1ED91900AC5379 /* DrugsTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DrugsTableViewController.mm; sourceTree = "<group>"; };
 		F0A1F2AD1A1EF5BF00AC5379 /* EnterParametersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterParametersTableViewController.h; sourceTree = "<group>"; };
 		F0A1F2AE1A1EF5BF00AC5379 /* EnterParametersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterParametersTableViewController.m; sourceTree = "<group>"; };
+		F0BB60FA1A1FA57900A1CD5E /* drugs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = drugs.plist; sourceTree = "<group>"; };
+		F0BB60FC1A1FAF5C00A1CD5E /* DrugsTableHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrugsTableHeader.xib; sourceTree = "<group>"; };
+		F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BU_logo.gif; sourceTree = "<group>"; };
+		F0BB61011A1FC44D00A1CD5E /* toxins.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = toxins.plist; sourceTree = "<group>"; };
+		F0BB61031A1FC5F900A1CD5E /* ToxinsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToxinsTableViewController.h; sourceTree = "<group>"; };
+		F0BB61041A1FC5F900A1CD5E /* ToxinsTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ToxinsTableViewController.mm; sourceTree = "<group>"; };
 		F0C96C121A1C579700142684 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionViewController.h; sourceTree = "<group>"; };
 		F0C96C131A1C579700142684 /* QuestionViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QuestionViewController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,8 +184,12 @@
 		F01407621A1BAB9C0036A69A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F0BB60FE1A1FB70500A1CD5E /* Images */,
 				F01407631A1BAB9C0036A69A /* Info.plist */,
 				F01407641A1BAB9C0036A69A /* main.m */,
+				F0BB60FA1A1FA57900A1CD5E /* drugs.plist */,
+				F0BB60FC1A1FAF5C00A1CD5E /* DrugsTableHeader.xib */,
+				F0BB61011A1FC44D00A1CD5E /* toxins.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -249,8 +267,21 @@
 				F0A1F2AB1A1ED91900AC5379 /* DrugsTableViewController.mm */,
 				F0A1F2AD1A1EF5BF00AC5379 /* EnterParametersTableViewController.h */,
 				F0A1F2AE1A1EF5BF00AC5379 /* EnterParametersTableViewController.m */,
+				F0BB61031A1FC5F900A1CD5E /* ToxinsTableViewController.h */,
+				F0BB61041A1FC5F900A1CD5E /* ToxinsTableViewController.mm */,
+				F057CF771A1FDE4B00A5AC29 /* MiscTableViewController.h */,
+				F057CF781A1FDE4B00A5AC29 /* MiscTableViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F0BB60FE1A1FB70500A1CD5E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */,
+			);
+			name = Images;
+			path = Res/Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,9 +365,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01407711A1BAB9C0036A69A /* Main.storyboard in Resources */,
+				F0BB61001A1FB70500A1CD5E /* BU_logo.gif in Resources */,
+				F0BB60FD1A1FAF5C00A1CD5E /* DrugsTableHeader.xib in Resources */,
+				F0BB61021A1FC44D00A1CD5E /* toxins.plist in Resources */,
 				F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */,
 				F0A1F29B1A1E8D0B00AC5379 /* dictionary.txt in Resources */,
 				F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */,
+				F0BB60FB1A1FA57900A1CD5E /* drugs.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +392,7 @@
 				F0C96C141A1C579700142684 /* QuestionViewController.mm in Sources */,
 				F0A1F2911A1E8D0B00AC5379 /* Atropine.cpp in Sources */,
 				F0A1F2971A1E8D0B00AC5379 /* CoralSnake.cpp in Sources */,
+				F057CF791A1FDE4B00A5AC29 /* MiscTableViewController.m in Sources */,
 				F0A1F2901A1E8D0B00AC5379 /* Antidote.cpp in Sources */,
 				F0A1F28F1A1E8D0B00AC5379 /* Acetylcysteine.cpp in Sources */,
 				F0A1F2921A1E8D0B00AC5379 /* BabyBIG.cpp in Sources */,
@@ -370,6 +406,7 @@
 				F014076E1A1BAB9C0036A69A /* HomeController.m in Sources */,
 				F0A1F2A11A1E8D0B00AC5379 /* Question.cpp in Sources */,
 				F0A1F29F1A1E8D0B00AC5379 /* Etoh.cpp in Sources */,
+				F0BB61051A1FC5F900A1CD5E /* ToxinsTableViewController.mm in Sources */,
 				F09306931A1D009D00071C68 /* Dote.mm in Sources */,
 				F01407651A1BAB9C0036A69A /* main.m in Sources */,
 				F0A1F2991A1E8D0B00AC5379 /* CyanideToxicity.cpp in Sources */,
@@ -502,6 +539,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Elixir/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -512,6 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Elixir/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

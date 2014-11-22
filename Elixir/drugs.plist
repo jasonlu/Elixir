@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>acetylcysteine</string>
+		<key>Algorithm</key>
+		<string>Acetylcysteine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>amyl nitrite</string>
+		<key>Algorithm</key>
+		<string>CyanideToxicity</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Cyanide Antidote Kit</string>
+		<key>Algorithm</key>
+		<string>CyanideToxicity</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>sodium nitrite</string>
+		<key>Algorithm</key>
+		<string>CyanideToxicity</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>sodium thiosulfate</string>
+		<key>Algorithm</key>
+		<string>CyanideToxicity</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>hydroxocobalamin</string>
+		<key>Algorithm</key>
+		<string>CyanideToxicity</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Cyanokit</string>
+		<key>Algorithm</key>
+		<string>CyanideToxicity</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>crotalidae antivenin (ovine) CroFab</string>
+		<key>Algorithm</key>
+		<string>CrotalidaeOvine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Rattlesnake</string>
+		<key>Algorithm</key>
+		<string>CrotalidaeOvine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Black Widow antivenin</string>
+		<key>Algorithm</key>
+		<string>BlackWidow</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Coral Snake antivenin</string>
+		<key>Algorithm</key>
+		<string>CoralSnake</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>atropine (for insecticide exposure)</string>
+		<key>Algorithm</key>
+		<string>Atropine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Botulism Antitoxin (non-infant)</string>
+		<key>Algorithm</key>
+		<string>BATbotulism</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Baby BIG</string>
+		<key>Algorithm</key>
+		<string>BabyBIG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>CaCl</string>
+		<key>Algorithm</key>
+		<string>CaChloride</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>calcium chloride</string>
+		<key>Algorithm</key>
+		<string>CaChloride</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>calcium gluconate</string>
+		<key>Algorithm</key>
+		<string>CaChloride</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>calcium salts</string>
+		<key>Algorithm</key>
+		<string>CaChloride</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Ca-EDTA &amp; dimercaprol</string>
+		<key>Algorithm</key>
+		<string>EdtaDimercaprol</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>dimercaprol (Pb toxicity)</string>
+		<key>Algorithm</key>
+		<string>EdtaDimercaprol</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Ca-DTPA/Zn-DTPA</string>
+		<key>Algorithm</key>
+		<string>CaDTPA</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>deferoxamine</string>
+		<key>Algorithm</key>
+		<string>Deferoxamine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Digoxin Immune FAB</string>
+		<key>Algorithm</key>
+		<string>DigiFab</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>dimercaprol (As, Au, or Hg toxicity)</string>
+		<key>Algorithm</key>
+		<string>Dimercap</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>ethanol</string>
+		<key>Algorithm</key>
+		<string>Etoh</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>flumazenil</string>
+		<key>Algorithm</key>
+		<string>Flumazenil</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>fomepizole</string>
+		<key>Algorithm</key>
+		<string>Fomepizole</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>glucagon</string>
+		<key>Algorithm</key>
+		<string>Glucagon</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>methylene blue</string>
+		<key>Algorithm</key>
+		<string>MetBlue</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>naloxone</string>
+		<key>Algorithm</key>
+		<string>Naloxone</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>octreotide</string>
+		<key>Algorithm</key>
+		<string>Octreotide</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>physostigmine</string>
+		<key>Algorithm</key>
+		<string>Physostigmine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>potassium iodide</string>
+		<key>Algorithm</key>
+		<string>PotassiumIodide</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>pralidoxime</string>
+		<key>Algorithm</key>
+		<string>Pralidoxime</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>prussian blue</string>
+		<key>Algorithm</key>
+		<string>PrussianBlue</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>pyridoxine</string>
+		<key>Algorithm</key>
+		<string>Pyridoxine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Vitamin B-6</string>
+		<key>Algorithm</key>
+		<string>Pyridoxine</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>sodium bicarbonate</string>
+		<key>Algorithm</key>
+		<string>SodiumBicarbonate</string>
+	</dict>
+</array>
+</plist>

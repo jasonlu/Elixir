@@ -1,44 +1,40 @@
 //
-//  DrugsTableViewController.m
+//  ToxinsTableViewController.m
 //  Elixir
 //
-//  Created by Jason Lu on 11/20/14.
+//  Created by Jason Lu on 11/21/14.
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "DrugsTableViewController.h"
-#import "Dote.h"
+#import "ToxinsTableViewController.h"
 #import "Person.h"
+#import "Dote.h"
 
-@interface DrugsTableViewController () {
-    UITableView *myView;
+@interface ToxinsTableViewController () {
     Person *me;
+    UITableView *myView;
+    UIView *_vTableHeader;
+    NSArray *drugs;
 }
 
 @end
 
-@implementation DrugsTableViewController
+@implementation ToxinsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     me = [Person sharedInstance];
     myView = (UITableView *)[self view];
-
-    _vTableHeader = [[[NSBundle mainBundle] loadNibNamed:@"DrugsTableHeader" owner:self options:nil] objectAtIndex:0];
-    [_vTableHeader sizeToFit];
     
-    CGRect frame = _vTableHeader.frame;
-    frame.size.height = 180;
-    _vTableHeader.frame = frame;
+    //_vTableHeader = [[[NSBundle mainBundle] loadNibNamed:@"DrugsTableHeader" owner:self options:nil] objectAtIndex:0];
+    //[_vTableHeader sizeToFit];
+    
+    //CGRect frame = _vTableHeader.frame;
+    //frame.size.height = 180;
+    //_vTableHeader.frame = frame;
     //[_vTableHeader removeFromSuperview];
-    [myView setTableHeaderView:_vTableHeader];
-    
-    // Load Person data.
-    _lbAge.text = [NSString stringWithFormat:@"%g yr", me.age];
-    _lbHeight.text = [NSString stringWithFormat:@"%g cm", me.heightcm];
-    _lbWeight.text = [NSString stringWithFormat:@"%g kg", me.weightkg];
-    _lbBMI.text = [NSString stringWithFormat:@"%g kg/m^2", [me BMI]];
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"drugs" ofType:@"plist"];
+    //[myView setTableHeaderView:_vTableHeader];
+    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"toxins" ofType:@"plist"];
     drugs = [NSArray arrayWithContentsOfFile: plistPath];
     id mySort = ^(NSDictionary * obj1, NSDictionary * obj2){
         NSString *name1 = [[obj1 objectForKey:@"Name"] lowercaseString];
@@ -47,26 +43,19 @@
     };
     drugs = [drugs sortedArrayUsingComparator:mySort];
     
+    
+    // Load Person data.
+    //_lbAge.text = [NSString stringWithFormat:@"%g yr", me.age];
+    //_lbHeight.text = [NSString stringWithFormat:@"%g cm", me.heightcm];
+    //_lbWeight.text = [NSString stringWithFormat:@"%g kg", me.weightkg];
+    //_lbBMI.text = [NSString stringWithFormat:@"%g kg/m^2", [me BMI]];
+
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    //NSLog(@"subviews: %@", [_vTableHeader subviews]);
-    //CGRect frame;
-    //CGRect lastFrame = [[[_vTableHeader subviews] lastObject] frame];
-    
-
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -88,7 +77,8 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ToxinCell" forIndexPath:indexPath];
     // Configure the cell...
     NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
     NSString *text = [drug objectForKey:@"Name"];
@@ -97,11 +87,13 @@
     return cell;
 }
 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
     Dote *dote = [Dote sharedInstance];
     [dote setDrug: [drug objectForKey:@"Algorithm"]];
 }
+
 
 /*
 // Override to support conditional editing of the table view.

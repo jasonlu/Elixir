@@ -37,6 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     
     Dote *dote = [Dote sharedInstance];
@@ -69,7 +70,7 @@
     tbOptionTable.delegate = self;
     tbOptionTable.dataSource = self;
     std::string type = question->getType();
-    NSLog(@"type:: %@", [NSString stringWithCString:type.c_str() encoding: [NSString defaultCStringEncoding]]);
+    //NSLog(@"type:: %@", [NSString stringWithCString:type.c_str() encoding: [NSString defaultCStringEncoding]]);
     
     if(type == "numbers") {
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
@@ -83,13 +84,19 @@
         if(ansValue == -1) {
             tfInputvalue.text = @"";
         } else {
-            tfInputvalue.text = [NSString stringWithFormat:@"%f", ansValue];
+            tfInputvalue.text = [NSString stringWithFormat:@"%g", ansValue];
         }
         
         [vResponseView setHidden:YES];
         [tbOptionTable setHidden:YES];
         [tfInputvalue becomeFirstResponder];
         [btnNext setEnabled:NO];
+        
+        // Handle swipe.
+        _gLeftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
+        _gLeftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
+        [[self view] addGestureRecognizer:_gLeftSwipe];
+        
     } else if(type == "options" || type == "yesno") {
         [vResponseView setHidden:YES];
         [vInputView setHidden:YES];
@@ -103,11 +110,11 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    NSLog(@"DrugVuewController viewWillAppear");
+    //NSLog(@"DrugVuewController viewWillAppear");
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    NSLog(@"DrugVuewController viewDidAppear");
+    //NSLog(@"DrugVuewController viewDidAppear");
 }
 
 - (void)didReceiveMemoryWarning {
@@ -144,6 +151,11 @@
     }
 }
 
+- (IBAction)swipeLeft:(UISwipeGestureRecognizer *)sender {
+    [self btnNextClicked:nil];
+    NSLog(@"swipe left");
+}
+
 - (IBAction)tfEditingChanged:(UITextField *)sender {
     if([[sender text] isEqualToString: @""]) {
         [btnNext setEnabled:NO];
@@ -174,14 +186,14 @@
 
 // UITableView delegate methods.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSLog(@"numberOfSectionsInTableView");
+    //NSLog(@"numberOfSectionsInTableView");
     // Return the number of sections.
     // If You have only one(1) section, return 1, otherwise you must handle sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"tableView:tableView numberOfRowsInSection:section");
+    //NSLog(@"tableView:tableView numberOfRowsInSection:section");
     // Return the number of rows in the section.
     return [optionArray count];
 }
@@ -206,12 +218,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger index = indexPath.row;
-    NSLog(@"didSelectRowAtIndexPath: %@", indexPath);
+    //NSLog(@"didSelectRowAtIndexPath: %@", indexPath);
     NSString *nsRes = [NSString stringWithFormat:@"%ld",index];
     std::string res = [nsRes UTF8String];
     question->setAnswer(res);
     [self showNextQuestion];
 }
+
 
 
 @end

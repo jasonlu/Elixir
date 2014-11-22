@@ -1,72 +1,30 @@
 //
-//  DrugsTableViewController.m
+//  MiscTableViewController.m
 //  Elixir
 //
-//  Created by Jason Lu on 11/20/14.
+//  Created by Jason Lu on 11/21/14.
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "DrugsTableViewController.h"
-#import "Dote.h"
-#import "Person.h"
+#import "MiscTableViewController.h"
 
-@interface DrugsTableViewController () {
-    UITableView *myView;
-    Person *me;
+@interface MiscTableViewController () {
+    NSString *pcc;
 }
 
 @end
 
-@implementation DrugsTableViewController
+@implementation MiscTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    me = [Person sharedInstance];
-    myView = (UITableView *)[self view];
-
-    _vTableHeader = [[[NSBundle mainBundle] loadNibNamed:@"DrugsTableHeader" owner:self options:nil] objectAtIndex:0];
-    [_vTableHeader sizeToFit];
-    
-    CGRect frame = _vTableHeader.frame;
-    frame.size.height = 180;
-    _vTableHeader.frame = frame;
-    //[_vTableHeader removeFromSuperview];
-    [myView setTableHeaderView:_vTableHeader];
-    
-    // Load Person data.
-    _lbAge.text = [NSString stringWithFormat:@"%g yr", me.age];
-    _lbHeight.text = [NSString stringWithFormat:@"%g cm", me.heightcm];
-    _lbWeight.text = [NSString stringWithFormat:@"%g kg", me.weightkg];
-    _lbBMI.text = [NSString stringWithFormat:@"%g kg/m^2", [me BMI]];
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"drugs" ofType:@"plist"];
-    drugs = [NSArray arrayWithContentsOfFile: plistPath];
-    id mySort = ^(NSDictionary * obj1, NSDictionary * obj2){
-        NSString *name1 = [[obj1 objectForKey:@"Name"] lowercaseString];
-        NSString *name2 = [[obj2 objectForKey:@"Name"] lowercaseString];
-        return [name1 compare: name2];
-    };
-    drugs = [drugs sortedArrayUsingComparator:mySort];
+    pcc = @"tel:1-800-222-1222";
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
-    
-}
-
--(void)viewWillAppear:(BOOL)animated {
-    //NSLog(@"subviews: %@", [_vTableHeader subviews]);
-    //CGRect frame;
-    //CGRect lastFrame = [[[_vTableHeader subviews] lastObject] frame];
-    
-
-}
-
--(void)viewDidAppear:(BOOL)animated {
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -74,34 +32,45 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)callPCC {
+    UIDevice *device = [UIDevice currentDevice];
+    if ([[device model] isEqualToString:@"iPhone"] ) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:pcc]];
+    } else {
+        UIAlertView *notPermitted=[[UIAlertView alloc] initWithTitle:@"Alert" message:@"Your device doesn't support this feature." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    }
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [drugs count];
+    return 3;
 }
 
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    // Configure the cell...
-    NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
-    NSString *text = [drug objectForKey:@"Name"];
-    cell.textLabel.text = text;//[NSString stringWithFormat:];
-    //NSLog(@"tableView:tableView cellForRowAtIndexPath:indexPath, text: %@", text);
-    return cell;
-}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
-    Dote *dote = [Dote sharedInstance];
-    [dote setDrug: [drug objectForKey:@"Algorithm"]];
+    UITableViewCell *theCellClicked = [self.tableView cellForRowAtIndexPath:indexPath];
+    if (theCellClicked == _tvcCallPCC) {
+        [self callPCC];
+    }
 }
+/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+*/
 
 /*
 // Override to support conditional editing of the table view.

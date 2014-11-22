@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Name</key>
+		<string>Water moccasin envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>acetaminophen</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>acetonitrile</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>acrylonitrile</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>americium</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>apricot pits</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>anticholinergic syndrome</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>benzodiazepine toxicity</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Black Widow envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Botulism (non-infant)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Botulism (infant/neonate)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Ca channel blocker (antidote Ca Salts)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Coral snake envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Copperhead snake envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Cottonmouth envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Cs-137</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>curium</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>cyanide</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>cyanogen chloride</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>digoxin</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>ethylene glycol (antidote ethanol)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>ethylene glycol (antidote fomepizole)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Fluoride overdose</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>HCN</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Heavy metal (As
+ Au
+ or Hg) toxicity</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>hydrazines/gyromitrin</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>I-131</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Iron toxicity</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>isoniazid</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>KCN</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Latrodectus mactans envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Lead encephalopathy</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Lead toxicity</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>methanol (ethanol as antidote)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>methanol (fomepizole as antidote)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>methemoglobinemia</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Micrurus fulvius envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>N-methyl carbamate insecticide</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>NaCN</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>peach pits</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>opioid toxicity</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>organophosphates (antidote atropine)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>organophosphates (antidote pralidoxime)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Pit-Viper envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>plutonium</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>radioiodine</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Rattlesnake envenomation</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Smoke Inhalation (synthetic materials)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>sodium channel blockers</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>sulfonylurea induced hypoglycemia</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>thallium</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Beta Blocker (antidote glucagon)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+	<dict>
+		<key>Name</key>
+		<string>Ca channel blocker (antidote glucagon)</string>
+		<key>Algorithm</key>
+		<string>ALG</string>
+	</dict>
+</array>
+</plist>

@@ -22,7 +22,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     Person *me = [Person sharedInstance];
-    [me setParamsAge:20 Height:180 weight:80];
+
+    
+    
+    // Register the preference defaults early.
+    NSString *prefPath;
+    prefPath = [[NSBundle mainBundle] pathForResource:@"defaultPref" ofType:@"plist"];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithContentsOfFile: prefPath];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+
+    
+    
+    // Other initialization...
+    
+    
+    
     return YES;
 }
 

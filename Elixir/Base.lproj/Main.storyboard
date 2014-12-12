@@ -186,32 +186,12 @@ This educational program is not intended for individual patient care. If you are
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-C5-K8k">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-ig-Xd7" userLabel="Title Label">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNz-ig-Xd7" userLabel="Title Label">
                                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNN-CQ-WMF">
-                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                        <color key="backgroundColor" red="1" green="0.61802441419999998" blue="0.56123023809999995" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Q5n-8W-UZO"/>
-                                        </constraints>
-                                        <attributedString key="attributedText"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Q5n-8W-UZO"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <mask key="constraints">
-                                                <include reference="Q5n-8W-UZO"/>
-                                            </mask>
-                                        </variation>
-                                    </textView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="KZ8-Xq-q1r">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -230,7 +210,7 @@ This educational program is not intended for individual patient care. If you are
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="36" y="77" width="328" height="30"/>
+                                            <rect key="frame" x="36" y="245" width="328" height="77"/>
                                             <mask key="constraints">
                                                 <include reference="NLg-6t-B2W"/>
                                             </mask>
@@ -243,6 +223,9 @@ This educational program is not intended for individual patient care. If you are
                                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="328" height="30"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="tfEditingChanged:" destination="Ug4-AO-jeO" eventType="editingChanged" id="p17-4a-u67"/>
                                                 </connections>
@@ -252,6 +235,9 @@ This educational program is not intended for individual patient care. If you are
                                                 <state key="normal" title="Next">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="296" y="47" width="32" height="30"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="btnNextClicked:" destination="Ug4-AO-jeO" eventType="touchUpInside" id="drf-Af-eE0"/>
                                                 </connections>
@@ -286,7 +272,8 @@ This educational program is not intended for individual patient care. If you are
                                                 <exclude reference="gI4-qQ-fsS"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="36" y="245" width="328" height="77"/>
                                             <mask key="subviews">
                                                 <include reference="VHy-Ou-u53"/>
                                                 <include reference="3mJ-SQ-Gai"/>
@@ -309,6 +296,9 @@ This educational program is not intended for individual patient care. If you are
                                                 <state key="normal" title="Okay">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                    <rect key="frame" x="292" y="0.0" width="36" height="30"/>
+                                                </variation>
                                                 <connections>
                                                     <action selector="btnNextClicked:" destination="Ug4-AO-jeO" eventType="touchUpInside" id="Kmi-np-sqP"/>
                                                 </connections>
@@ -330,7 +320,8 @@ This educational program is not intended for individual patient care. If you are
                                                 <exclude reference="kuJ-aE-AkQ"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
+                                        <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="36" y="245" width="328" height="30"/>
                                             <mask key="subviews">
                                                 <include reference="oDn-Dt-3Xv"/>
                                             </mask>
@@ -341,105 +332,76 @@ This educational program is not intended for individual patient care. If you are
                                             </mask>
                                         </variation>
                                     </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nNN-CQ-WMF" userLabel="Question Text View">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <color key="backgroundColor" red="1" green="0.61802441419999998" blue="0.56123023809999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Q5n-8W-UZO"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Q5n-8W-UZO"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <mask key="constraints">
+                                                <include reference="Q5n-8W-UZO"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="nNN-CQ-WMF" firstAttribute="leading" secondItem="GBu-C5-K8k" secondAttribute="leading" constant="36" id="EPX-bz-xzI"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="B1O-4s-Whs" secondAttribute="bottom" constant="454" id="FAK-2h-HaE">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nNN-CQ-WMF" secondAttribute="bottom" constant="733" id="09G-qG-IaL">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="300"/>
                                     </constraint>
-                                    <constraint firstAttribute="centerX" secondItem="4bd-9S-SJE" secondAttribute="centerX" constant="8" id="LQs-Pw-hXZ">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                                    </constraint>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KZ8-Xq-q1r" secondAttribute="bottom" constant="284" id="Lty-kQ-7yP">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
-                                    </constraint>
-                                    <constraint firstAttribute="centerX" secondItem="B1O-4s-Whs" secondAttribute="centerX" id="NGp-JH-4LZ"/>
-                                    <constraint firstItem="B1O-4s-Whs" firstAttribute="top" secondItem="nNN-CQ-WMF" secondAttribute="bottom" constant="88" id="O3L-EF-Mfa">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
-                                    </constraint>
-                                    <constraint firstItem="B1O-4s-Whs" firstAttribute="width" secondItem="nNN-CQ-WMF" secondAttribute="width" id="Y9R-Wu-Dn6"/>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4bd-9S-SJE" secondAttribute="bottom" constant="402" id="bQM-M8-Fe4">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
-                                    </constraint>
-                                    <constraint firstAttribute="trailing" secondItem="nNN-CQ-WMF" secondAttribute="trailing" constant="36" id="ecE-Rj-Mmg"/>
-                                    <constraint firstAttribute="centerX" secondItem="WNz-ig-Xd7" secondAttribute="centerX" id="h7T-tb-m8A"/>
-                                    <constraint firstAttribute="centerX" secondItem="KZ8-Xq-q1r" secondAttribute="centerX" constant="8" id="kaz-23-hLg">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
-                                    </constraint>
-                                    <constraint firstAttribute="centerX" secondItem="nNN-CQ-WMF" secondAttribute="centerX" id="m9S-Ep-7PZ"/>
-                                    <constraint firstItem="WNz-ig-Xd7" firstAttribute="top" secondItem="GBu-C5-K8k" secondAttribute="top" constant="8" id="mV0-ue-Ndd"/>
-                                    <constraint firstItem="KZ8-Xq-q1r" firstAttribute="top" secondItem="nNN-CQ-WMF" secondAttribute="bottom" constant="8" id="nl9-Pw-5Wp">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
-                                    </constraint>
-                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nNN-CQ-WMF" secondAttribute="bottom" constant="494" id="paa-eZ-i2F">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="70"/>
-                                    </constraint>
-                                    <constraint firstItem="4bd-9S-SJE" firstAttribute="width" secondItem="nNN-CQ-WMF" secondAttribute="width" id="sc4-zH-vWQ"/>
-                                    <constraint firstItem="4bd-9S-SJE" firstAttribute="top" secondItem="nNN-CQ-WMF" secondAttribute="bottom" constant="15" id="swh-vY-yE7">
-                                        <variation key="heightClass=regular-widthClass=compact" constant="10"/>
-                                    </constraint>
-                                    <constraint firstItem="nNN-CQ-WMF" firstAttribute="width" secondItem="KZ8-Xq-q1r" secondAttribute="width" id="uc7-UP-u6f"/>
-                                    <constraint firstItem="nNN-CQ-WMF" firstAttribute="top" secondItem="WNz-ig-Xd7" secondAttribute="bottom" constant="8" id="z2N-Ap-Le2"/>
+                                    <constraint firstItem="WNz-ig-Xd7" firstAttribute="top" secondItem="GBu-C5-K8k" secondAttribute="top" constant="8" id="4WL-Q0-NTr"/>
+                                    <constraint firstItem="nNN-CQ-WMF" firstAttribute="top" secondItem="WNz-ig-Xd7" secondAttribute="bottom" constant="8" id="5Of-gD-v5A"/>
+                                    <constraint firstItem="WNz-ig-Xd7" firstAttribute="leading" secondItem="GBu-C5-K8k" secondAttribute="leading" constant="36" id="Afz-7W-baB"/>
+                                    <constraint firstAttribute="trailing" secondItem="WNz-ig-Xd7" secondAttribute="trailing" constant="36" id="M2a-VE-HVg"/>
+                                    <constraint firstItem="nNN-CQ-WMF" firstAttribute="leading" secondItem="WNz-ig-Xd7" secondAttribute="leading" id="Yp3-3D-hak"/>
+                                    <constraint firstItem="nNN-CQ-WMF" firstAttribute="width" secondItem="WNz-ig-Xd7" secondAttribute="width" id="bN2-Rd-MMS"/>
+                                    <constraint firstAttribute="centerX" secondItem="WNz-ig-Xd7" secondAttribute="centerX" id="w2k-kA-xI2"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="WNz-ig-Xd7"/>
-                                        <exclude reference="nNN-CQ-WMF"/>
                                         <exclude reference="KZ8-Xq-q1r"/>
                                         <exclude reference="4bd-9S-SJE"/>
                                         <exclude reference="B1O-4s-Whs"/>
+                                        <exclude reference="nNN-CQ-WMF"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="h7T-tb-m8A"/>
-                                        <exclude reference="mV0-ue-Ndd"/>
-                                        <exclude reference="EPX-bz-xzI"/>
-                                        <exclude reference="ecE-Rj-Mmg"/>
-                                        <exclude reference="m9S-Ep-7PZ"/>
-                                        <exclude reference="paa-eZ-i2F"/>
-                                        <exclude reference="uc7-UP-u6f"/>
-                                        <exclude reference="z2N-Ap-Le2"/>
-                                        <exclude reference="LQs-Pw-hXZ"/>
-                                        <exclude reference="bQM-M8-Fe4"/>
-                                        <exclude reference="sc4-zH-vWQ"/>
-                                        <exclude reference="swh-vY-yE7"/>
-                                        <exclude reference="FAK-2h-HaE"/>
-                                        <exclude reference="NGp-JH-4LZ"/>
-                                        <exclude reference="O3L-EF-Mfa"/>
-                                        <exclude reference="Y9R-Wu-Dn6"/>
-                                        <exclude reference="Lty-kQ-7yP"/>
-                                        <exclude reference="kaz-23-hLg"/>
-                                        <exclude reference="nl9-Pw-5Wp"/>
+                                        <exclude reference="4WL-Q0-NTr"/>
+                                        <exclude reference="Afz-7W-baB"/>
+                                        <exclude reference="M2a-VE-HVg"/>
+                                        <exclude reference="w2k-kA-xI2"/>
+                                        <exclude reference="09G-qG-IaL"/>
+                                        <exclude reference="5Of-gD-v5A"/>
+                                        <exclude reference="Yp3-3D-hak"/>
+                                        <exclude reference="bN2-Rd-MMS"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES">
                                     <rect key="frame" x="0.0" y="8" width="400" height="800"/>
                                     <mask key="subviews">
                                         <include reference="WNz-ig-Xd7"/>
-                                        <include reference="nNN-CQ-WMF"/>
                                         <include reference="KZ8-Xq-q1r"/>
                                         <include reference="4bd-9S-SJE"/>
                                         <include reference="B1O-4s-Whs"/>
+                                        <include reference="nNN-CQ-WMF"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="h7T-tb-m8A"/>
-                                        <include reference="mV0-ue-Ndd"/>
-                                        <include reference="EPX-bz-xzI"/>
-                                        <include reference="ecE-Rj-Mmg"/>
-                                        <include reference="m9S-Ep-7PZ"/>
-                                        <exclude reference="paa-eZ-i2F"/>
-                                        <include reference="uc7-UP-u6f"/>
-                                        <include reference="z2N-Ap-Le2"/>
-                                        <include reference="LQs-Pw-hXZ"/>
-                                        <include reference="bQM-M8-Fe4"/>
-                                        <include reference="sc4-zH-vWQ"/>
-                                        <include reference="swh-vY-yE7"/>
-                                        <include reference="FAK-2h-HaE"/>
-                                        <include reference="NGp-JH-4LZ"/>
-                                        <include reference="O3L-EF-Mfa"/>
-                                        <include reference="Y9R-Wu-Dn6"/>
-                                        <include reference="Lty-kQ-7yP"/>
-                                        <include reference="kaz-23-hLg"/>
-                                        <include reference="nl9-Pw-5Wp"/>
+                                        <include reference="4WL-Q0-NTr"/>
+                                        <include reference="Afz-7W-baB"/>
+                                        <include reference="M2a-VE-HVg"/>
+                                        <include reference="w2k-kA-xI2"/>
+                                        <include reference="09G-qG-IaL"/>
+                                        <include reference="5Of-gD-v5A"/>
+                                        <include reference="Yp3-3D-hak"/>
+                                        <include reference="bN2-Rd-MMS"/>
                                     </mask>
                                 </variation>
                             </scrollView>

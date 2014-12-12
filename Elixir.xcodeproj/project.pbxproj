@@ -4032,6 +4032,7 @@
 		F08805EB1A3ACC14002CDFEA /* Pyridoxine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F08805CB1A3ACC14002CDFEA /* Pyridoxine.cpp */; };
 		F08805EC1A3ACC14002CDFEA /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F08805CD1A3ACC14002CDFEA /* Question.cpp */; };
 		F08805ED1A3ACC14002CDFEA /* SodiumBicarbonate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F08805CF1A3ACC14002CDFEA /* SodiumBicarbonate.cpp */; };
+		F08805F01A3AF013002CDFEA /* AlgorithmReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08805EE1A3AF013002CDFEA /* AlgorithmReference.xib */; };
 		F0BB61001A1FB70500A1CD5E /* BU_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */; };
 /* End PBXBuildFile section */
 
@@ -8113,6 +8114,7 @@
 		F08805CE1A3ACC14002CDFEA /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = ../../../libAntidote/libAntidote/Question.h; sourceTree = "<group>"; };
 		F08805CF1A3ACC14002CDFEA /* SodiumBicarbonate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SodiumBicarbonate.cpp; path = ../../../libAntidote/libAntidote/SodiumBicarbonate.cpp; sourceTree = "<group>"; };
 		F08805D01A3ACC14002CDFEA /* SodiumBicarbonate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SodiumBicarbonate.h; path = ../../../libAntidote/libAntidote/SodiumBicarbonate.h; sourceTree = "<group>"; };
+		F08805EF1A3AF013002CDFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AlgorithmReference.xib; sourceTree = "<group>"; };
 		F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BU_logo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -12555,6 +12557,7 @@
 				F014076F1A1BAB9C0036A69A /* Main.storyboard */,
 				F049B1DB1A20550400003842 /* DrugsTableHeader.xib */,
 				F01407741A1BAB9C0036A69A /* LaunchScreen.xib */,
+				F08805EE1A3AF013002CDFEA /* AlgorithmReference.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -16564,6 +16567,7 @@
 				F049A54E1A203A2800003842 /* alphabetical_sorting_az-25.png in Resources */,
 				F049ABF11A203A2800003842 /* dj-50.png in Resources */,
 				F049A48D1A203A2800003842 /* pavilion-50.png in Resources */,
+				F08805F01A3AF013002CDFEA /* AlgorithmReference.xib in Resources */,
 				F049AE021A203A2800003842 /* school-25.png in Resources */,
 				F049A7A81A203A2800003842 /* clover-25.png in Resources */,
 				F049AF201A203A2800003842 /* minus_1year-25.png in Resources */,
@@ -16841,6 +16845,14 @@
 				F049B1DC1A20550400003842 /* Base */,
 			);
 			name = DrugsTableHeader.xib;
+			sourceTree = "<group>";
+		};
+		F08805EE1A3AF013002CDFEA /* AlgorithmReference.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F08805EF1A3AF013002CDFEA /* Base */,
+			);
+			name = AlgorithmReference.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

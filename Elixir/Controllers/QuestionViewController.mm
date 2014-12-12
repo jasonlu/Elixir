@@ -55,7 +55,7 @@
     
     NSString *nsRef = [NSString stringWithCString:[dote getDrug]->getRef().c_str()
                                                   encoding:[NSString defaultCStringEncoding]];
-
+    _tvRef.text = nsRef;
     tvQuestionText.text = nsQuestionText;
     
     NSMutableArray *options = [[NSMutableArray alloc] init];
@@ -107,6 +107,9 @@
     }
     if(type == "end") {
         btnNext.titleLabel.text = @"Finish";
+        [_tvRef sizeToFit];
+        [_vRefView sizeToFit];
+        _vRefView.hidden = false;
     }
 }
 

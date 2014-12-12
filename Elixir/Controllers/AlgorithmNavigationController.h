@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DrugModeViewController : UINavigationController
+@interface AlgorithmNavigationController : UINavigationController
 
 @end

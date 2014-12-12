@@ -1,55 +1,31 @@
 //
-//  ToxinsTableViewController.m
+//  MiscTableViewController.m
 //  Elixir
 //
 //  Created by Jason Lu on 11/21/14.
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "ToxinsTableViewController.h"
-#import "Person.h"
-#import "Dote.h"
+#import "MoreTableViewController.h"
+#import "EnterParametersTableViewController.h"
 
-@interface ToxinsTableViewController () {
-    Person *me;
-    UITableView *myView;
-    UIView *_vTableHeader;
-    NSArray *drugs;
+@interface MoreTableViewController () {
+    NSString *pcc;
+    //NSDictionary *pref;
+    NSUserDefaults *pref;
 }
 
 @end
 
-@implementation ToxinsTableViewController
+@implementation MoreTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    me = [Person sharedInstance];
-    myView = (UITableView *)[self view];
-    
-    //_vTableHeader = [[[NSBundle mainBundle] loadNibNamed:@"DrugsTableHeader" owner:self options:nil] objectAtIndex:0];
-    //[_vTableHeader sizeToFit];
-    
-    //CGRect frame = _vTableHeader.frame;
-    //frame.size.height = 180;
-    //_vTableHeader.frame = frame;
-    //[_vTableHeader removeFromSuperview];
-    //[myView setTableHeaderView:_vTableHeader];
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"toxins" ofType:@"plist"];
-    drugs = [NSArray arrayWithContentsOfFile: plistPath];
-    id mySort = ^(NSDictionary * obj1, NSDictionary * obj2){
-        NSString *name1 = [[obj1 objectForKey:@"Name"] lowercaseString];
-        NSString *name2 = [[obj2 objectForKey:@"Name"] lowercaseString];
-        return [name1 compare: name2];
-    };
-    drugs = [drugs sortedArrayUsingComparator:mySort];
-    
-    
-    // Load Person data.
-    //_lbAge.text = [NSString stringWithFormat:@"%g yr", me.age];
-    //_lbHeight.text = [NSString stringWithFormat:@"%g cm", me.heightcm];
-    //_lbWeight.text = [NSString stringWithFormat:@"%g kg", me.weightkg];
-    //_lbBMI.text = [NSString stringWithFormat:@"%g kg/m^2", [me BMI]];
+    pcc = @"tel:1-800-222-1222";
+    pref = [NSUserDefaults standardUserDefaults];
 
+    [_segUnitType setSelectedSegmentIndex: [pref integerForKey  :@"UnitType"]];
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -58,42 +34,58 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+-(void)viewWillAppear:(BOOL)animated {
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
+                                                         bundle:nil];
+
+    NSString *paramControllerId = @"EnterParametersTableViewControllerId";
+    EnterParametersTableViewController *vcParamsView = [storyboard instantiateViewControllerWithIdentifier:paramControllerId];
+    [vcParamsView setVcNextViewController:nil];
+}
+
+- (IBAction)setUnitType:(id)sender {
+    NSInteger index = [(UISegmentedControl *)sender selectedSegmentIndex];
+    [pref setInteger:index forKey:@"UnitType"];
+    [pref synchronize];
+    //[_segUnitType setSelectedSegmentIndex: (int)[pref objectForKey:@"UnitType"]];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+- (void)callPCC {
+    UIDevice *device = [UIDevice currentDevice];
+    if ([[device model] isEqualToString:@"iPhone"] ) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:pcc]];
+    } else {
+        UIAlertView *notPermitted=[[UIAlertView alloc] initWithTitle:@"Oops" message:@"Your device doesn't support this feature." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    }
+}
+
 #pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return [drugs count];
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Configure the cell...
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ToxinCell" forIndexPath:indexPath];
-    // Configure the cell...
-    NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
-    NSString *text = [drug objectForKey:@"Name"];
-    cell.textLabel.text = text;//[NSString stringWithFormat:];
-    //NSLog(@"tableView:tableView cellForRowAtIndexPath:indexPath, text: %@", text);
-    return cell;
-}
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
-    Dote *dote = [Dote sharedInstance];
-    [dote setDrug: [drug objectForKey:@"Algorithm"]];
+    UITableViewCell *theCellClicked = [self.tableView cellForRowAtIndexPath:indexPath];
+    if (theCellClicked == _tvcCallPCC) {
+        [self callPCC];
+    }
 }
 
+- (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue {
+    
+}
+/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -138,5 +130,6 @@
     // Pass the selected object to the new view controller.
 }
 */
+
 
 @end

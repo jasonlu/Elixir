@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "DrugModeViewController.h"
+#import "AlgorithmNavigationController.h"
 #import "EnterParametersTableViewController.h"
 #import "Person.h"
 
-@interface DrugModeViewController () {
+@interface AlgorithmNavigationController () {
     Person *me;
 }
 
 @end
 
-@implementation DrugModeViewController
+@implementation AlgorithmNavigationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +32,7 @@
                                                          bundle:nil];
     me = [Person sharedInstance];
     NSString *paramControllerId = @"EnterParametersTableViewControllerId";
-    NSString *drugTableControllerId = @"DrugsTableViewControllerId";
+    NSString *drugTableControllerId = @"AlgorithmTableViewControllerId";
     
     // Possible root views.
     EnterParametersTableViewController *vcParamsView = [storyboard instantiateViewControllerWithIdentifier:paramControllerId];
@@ -54,6 +54,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation

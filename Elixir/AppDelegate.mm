@@ -21,22 +21,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    Person *me = [Person sharedInstance];
 
-    
-    
     // Register the preference defaults early.
     NSString *prefPath;
     prefPath = [[NSBundle mainBundle] pathForResource:@"defaultPref" ofType:@"plist"];
     NSDictionary *appDefaults = [NSDictionary dictionaryWithContentsOfFile: prefPath];
     [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
 
-    
-    
-    // Other initialization...
-    
-    
-    
+    // Other initialization...    
     return YES;
 }
 

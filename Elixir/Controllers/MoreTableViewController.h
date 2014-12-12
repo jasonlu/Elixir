@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MiscTableViewController : UITableViewController
+@interface MoreTableViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UITableViewCell *tvcCallPCC;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segUnitType;
 - (IBAction)setUnitType:(id)sender;

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface DrugsTableViewController : UITableViewController {
+@interface AlgorithmTableViewController : UITableViewController {
     NSArray *drugs;
 }
 @property (weak, nonatomic) IBOutlet UIView *vTableHeader;

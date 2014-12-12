@@ -7,7 +7,7 @@
 //
 
 #import "QuestionViewController.h"
-#import "DrugsTableViewController.h"
+#import "AlgorithmTableViewController.h"
 #import "Dote.h"
 
 #ifdef __cplusplus
@@ -49,14 +49,15 @@
     
     question =  [dote getDrug]->getNextQuestion();
     
-    NSString *nsRef = [NSString stringWithCString:question->getText().c_str()
+    NSString *nsQuestionText = [NSString stringWithCString:question->getText().c_str()
                                          encoding:[NSString defaultCStringEncoding]];
 
-    tvQuestionText.text = nsRef;
     
-    //NSLog(@"ref:: %@", ref);
-    // Do any additional setup after loading the view.
-//    counter = 0;
+    NSString *nsRef = [NSString stringWithCString:[dote getDrug]->getRef().c_str()
+                                                  encoding:[NSString defaultCStringEncoding]];
+
+    tvQuestionText.text = nsQuestionText;
+    
     NSMutableArray *options = [[NSMutableArray alloc] init];
 
     for(int i = 0; i < question->getOptionsCount(); i++) {

@@ -6,32 +6,44 @@
 //  Copyright (c) 2014 jasonl.biz. All rights reserved.
 //
 
-#import "DrugsTableViewController.h"
+#import "AlgorithmTableViewController.h"
 #import "Dote.h"
 #import "Person.h"
 
-@interface DrugsTableViewController () {
+@interface AlgorithmTableViewController () {
     UITableView *myView;
     Person *me;
 }
 
 @end
 
-@implementation DrugsTableViewController
+@implementation AlgorithmTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     myView = (UITableView *)[self view];
     _vTableHeader = [[[NSBundle mainBundle] loadNibNamed:@"DrugsTableHeader" owner:self options:nil] objectAtIndex:0];
-//    [_vTableHeader sizeToFit];
     
     CGRect frame = _vTableHeader.frame;
     frame.size.height = 180;
     _vTableHeader.frame = frame;
     [myView setTableHeaderView:_vTableHeader];
     
+    NSLog(@"restorationIdentifier: %@", self.navigationController.restorationIdentifier);
+    NSString* plistPath;
     
-    NSString* plistPath = [[NSBundle mainBundle] pathForResource:@"drugs" ofType:@"plist"];
+    if([self.navigationController.restorationIdentifier isEqualToString:@"ToxinModeView"]) {
+        // Toxin mode
+        self.navigationItem.title = @"Select Toxin";
+        plistPath = [[NSBundle mainBundle] pathForResource:@"toxins" ofType:@"plist"];
+    } else {
+        self.navigationItem.title = @"Select Drug";
+        plistPath = [[NSBundle mainBundle] pathForResource:@"drugs" ofType:@"plist"];
+        
+    }
+    
+    
+    
     drugs = [NSArray arrayWithContentsOfFile: plistPath];
     id mySort = ^(NSDictionary * obj1, NSDictionary * obj2){
         NSString *name1 = [[obj1 objectForKey:@"Name"] lowercaseString];

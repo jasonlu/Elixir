@@ -118,7 +118,7 @@ This educational program is not intended for individual patient care. If you are
         <!--Drug-->
         <scene sceneID="7ce-CR-dlf">
             <objects>
-                <navigationController id="61w-hw-n2m" customClass="DrugModeViewController" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DurgModeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61w-hw-n2m" customClass="AlgorithmNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Drug" image="pill-25.png" id="WVY-R2-MCm"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="v1u-SM-j1t">
@@ -128,12 +128,12 @@ This educational program is not intended for individual patient care. If you are
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQ4-XQ-GIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5634" y="99.75"/>
+            <point key="canvasLocation" x="-6249" y="281.25"/>
         </scene>
-        <!--Drug Table-->
+        <!--Algorithm Table-->
         <scene sceneID="cKx-32-lhp">
             <objects>
-                <tableViewController storyboardIdentifier="DrugsTableViewControllerId" title="Select antidote" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xif-Nx-XKh" userLabel="Drug Table" customClass="DrugsTableViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="AlgorithmTableViewControllerId" title="Select antidote" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xif-Nx-XKh" userLabel="Algorithm Table" customClass="AlgorithmTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SR7-zY-R5y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,7 +169,7 @@ This educational program is not intended for individual patient care. If you are
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7KA-qR-TOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4254" y="767.25"/>
+            <point key="canvasLocation" x="-4692" y="281.25"/>
         </scene>
         <!--Question-->
         <scene sceneID="00X-ep-d2g">
@@ -205,9 +205,8 @@ This educational program is not intended for individual patient care. If you are
                                                 <exclude reference="Q5n-8W-UZO"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                        <variation key="heightClass=regular-widthClass=compact">
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <rect key="frame" x="36" y="37" width="328" height="205"/>
                                             <mask key="constraints">
                                                 <include reference="Q5n-8W-UZO"/>
                                             </mask>
@@ -231,7 +230,7 @@ This educational program is not intended for individual patient care. If you are
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="36" y="252" width="328" height="77"/>
+                                            <rect key="frame" x="36" y="77" width="328" height="30"/>
                                             <mask key="constraints">
                                                 <include reference="NLg-6t-B2W"/>
                                             </mask>
@@ -287,8 +286,7 @@ This educational program is not intended for individual patient care. If you are
                                                 <exclude reference="gI4-qQ-fsS"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="36" y="252" width="328" height="77"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="subviews">
                                                 <include reference="VHy-Ou-u53"/>
                                                 <include reference="3mJ-SQ-Gai"/>
@@ -311,9 +309,6 @@ This educational program is not intended for individual patient care. If you are
                                                 <state key="normal" title="Okay">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="268" y="0.0" width="60" height="30"/>
-                                                </variation>
                                                 <connections>
                                                     <action selector="btnNextClicked:" destination="Ug4-AO-jeO" eventType="touchUpInside" id="Kmi-np-sqP"/>
                                                 </connections>
@@ -335,8 +330,7 @@ This educational program is not intended for individual patient care. If you are
                                                 <exclude reference="kuJ-aE-AkQ"/>
                                             </mask>
                                         </variation>
-                                        <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="36" y="252" width="328" height="30"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
                                             <mask key="subviews">
                                                 <include reference="oDn-Dt-3Xv"/>
                                             </mask>
@@ -495,7 +489,7 @@ This educational program is not intended for individual patient care. If you are
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phr-I0-7GQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3507" y="427.5"/>
+            <point key="canvasLocation" x="-3888" y="281.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dft-uP-QDv">
@@ -518,51 +512,10 @@ This educational program is not intended for individual patient care. If you are
             </objects>
             <point key="canvasLocation" x="-4950" y="-578.25"/>
         </scene>
-        <!--Select Toxins-->
-        <scene sceneID="Wsg-ec-aPg">
-            <objects>
-                <tableViewController id="wVA-cm-6ea" customClass="ToxinsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hHQ-Ew-lMz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ToxinCell" textLabel="gex-t4-U0m" style="IBUITableViewCellStyleDefault" id="30X-0T-JSO">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="30X-0T-JSO" id="L5i-0h-TB2">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gex-t4-U0m">
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                            <variation key="heightClass=regular-widthClass=compact">
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            </variation>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Ug4-AO-jeO" kind="show" id="L7T-GY-HL7"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="wVA-cm-6ea" id="Yq4-uT-7FD"/>
-                            <outlet property="delegate" destination="wVA-cm-6ea" id="MTf-AG-jcC"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Select Toxins" id="MrM-Ag-AHS" customClass="Tox"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JaA-cG-AMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4254" y="99.75"/>
-        </scene>
         <!--Toxins-->
         <scene sceneID="epa-dA-XoZ">
             <objects>
-                <navigationController id="ya9-M4-mk1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="ToxinModeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ya9-M4-mk1" customClass="AlgorithmNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Toxins" image="skull-25.png" id="TjG-PE-X94"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="obF-ep-qyx">
@@ -572,12 +525,12 @@ This educational program is not intended for individual patient care. If you are
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4u2-Dx-msK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4950" y="99.75"/>
+            <point key="canvasLocation" x="-5478" y="281.25"/>
         </scene>
         <!--Misc-->
         <scene sceneID="wMy-tI-y96">
             <objects>
-                <tableViewController id="Hai-Wt-j0e" userLabel="Misc" customClass="MiscTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Hai-Wt-j0e" userLabel="Misc" customClass="MoreTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="qxt-Aa-UUd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1040,7 +993,4 @@ This educational program is not intended for individual patient care. If you are
         <image name="pill-25.png" width="25" height="25"/>
         <image name="skull-25.png" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Bcg-Ie-lCS"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -3991,13 +3991,12 @@
 		F049B1BE1A203A2800003842 /* wet-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F049A2361A203A2800003842 /* wet-25.png */; };
 		F049B1BF1A203A2800003842 /* wet-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F049A2371A203A2800003842 /* wet-50.png */; };
 		F049B1C11A203DC000003842 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F049B1C01A203DC000003842 /* iAd.framework */; };
-		F049B1D31A2054DE00003842 /* DrugModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1C61A2054DE00003842 /* DrugModeViewController.m */; };
-		F049B1D41A2054DE00003842 /* DrugsTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1C81A2054DE00003842 /* DrugsTableViewController.mm */; };
+		F049B1D31A2054DE00003842 /* AlgorithmNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1C61A2054DE00003842 /* AlgorithmNavigationController.m */; };
+		F049B1D41A2054DE00003842 /* AlgorithmTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1C81A2054DE00003842 /* AlgorithmTableViewController.mm */; };
 		F049B1D51A2054DE00003842 /* EnterParametersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1CA1A2054DE00003842 /* EnterParametersTableViewController.m */; };
 		F049B1D61A2054DE00003842 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1CC1A2054DE00003842 /* HomeController.m */; };
-		F049B1D71A2054DE00003842 /* MiscTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1CE1A2054DE00003842 /* MiscTableViewController.m */; };
+		F049B1D71A2054DE00003842 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1CE1A2054DE00003842 /* MoreTableViewController.m */; };
 		F049B1D81A2054DE00003842 /* QuestionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1D01A2054DE00003842 /* QuestionViewController.mm */; };
-		F049B1D91A2054DE00003842 /* ToxinsTableViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1D21A2054DE00003842 /* ToxinsTableViewController.mm */; };
 		F049B1DD1A20550400003842 /* DrugsTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F049B1DB1A20550400003842 /* DrugsTableHeader.xib */; };
 		F049B1E31A20551500003842 /* Dote.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1E01A20551500003842 /* Dote.mm */; };
 		F049B1E41A20551500003842 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1E21A20551500003842 /* Person.m */; };
@@ -8036,20 +8035,18 @@
 		F049A2361A203A2800003842 /* wet-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wet-25.png"; sourceTree = "<group>"; };
 		F049A2371A203A2800003842 /* wet-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wet-50.png"; sourceTree = "<group>"; };
 		F049B1C01A203DC000003842 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		F049B1C51A2054DE00003842 /* DrugModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugModeViewController.h; path = Controllers/DrugModeViewController.h; sourceTree = "<group>"; };
-		F049B1C61A2054DE00003842 /* DrugModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DrugModeViewController.m; path = Controllers/DrugModeViewController.m; sourceTree = "<group>"; };
-		F049B1C71A2054DE00003842 /* DrugsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DrugsTableViewController.h; path = Controllers/DrugsTableViewController.h; sourceTree = "<group>"; };
-		F049B1C81A2054DE00003842 /* DrugsTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DrugsTableViewController.mm; path = Controllers/DrugsTableViewController.mm; sourceTree = "<group>"; };
+		F049B1C51A2054DE00003842 /* AlgorithmNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlgorithmNavigationController.h; path = Controllers/AlgorithmNavigationController.h; sourceTree = "<group>"; };
+		F049B1C61A2054DE00003842 /* AlgorithmNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlgorithmNavigationController.m; path = Controllers/AlgorithmNavigationController.m; sourceTree = "<group>"; };
+		F049B1C71A2054DE00003842 /* AlgorithmTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlgorithmTableViewController.h; path = Controllers/AlgorithmTableViewController.h; sourceTree = "<group>"; };
+		F049B1C81A2054DE00003842 /* AlgorithmTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AlgorithmTableViewController.mm; path = Controllers/AlgorithmTableViewController.mm; sourceTree = "<group>"; };
 		F049B1C91A2054DE00003842 /* EnterParametersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnterParametersTableViewController.h; path = Controllers/EnterParametersTableViewController.h; sourceTree = "<group>"; };
 		F049B1CA1A2054DE00003842 /* EnterParametersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnterParametersTableViewController.m; path = Controllers/EnterParametersTableViewController.m; sourceTree = "<group>"; };
 		F049B1CB1A2054DE00003842 /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeController.h; path = Controllers/HomeController.h; sourceTree = "<group>"; };
 		F049B1CC1A2054DE00003842 /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeController.m; path = Controllers/HomeController.m; sourceTree = "<group>"; };
-		F049B1CD1A2054DE00003842 /* MiscTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MiscTableViewController.h; path = Controllers/MiscTableViewController.h; sourceTree = "<group>"; };
-		F049B1CE1A2054DE00003842 /* MiscTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MiscTableViewController.m; path = Controllers/MiscTableViewController.m; sourceTree = "<group>"; };
+		F049B1CD1A2054DE00003842 /* MoreTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MoreTableViewController.h; path = Controllers/MoreTableViewController.h; sourceTree = "<group>"; };
+		F049B1CE1A2054DE00003842 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreTableViewController.m; path = Controllers/MoreTableViewController.m; sourceTree = "<group>"; };
 		F049B1CF1A2054DE00003842 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionViewController.h; path = Controllers/QuestionViewController.h; sourceTree = "<group>"; };
 		F049B1D01A2054DE00003842 /* QuestionViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QuestionViewController.mm; path = Controllers/QuestionViewController.mm; sourceTree = "<group>"; };
-		F049B1D11A2054DE00003842 /* ToxinsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToxinsTableViewController.h; path = Controllers/ToxinsTableViewController.h; sourceTree = "<group>"; };
-		F049B1D21A2054DE00003842 /* ToxinsTableViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ToxinsTableViewController.mm; path = Controllers/ToxinsTableViewController.mm; sourceTree = "<group>"; };
 		F049B1DC1A20550400003842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DrugsTableHeader.xib; sourceTree = "<group>"; };
 		F049B1DF1A20551500003842 /* Dote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dote.h; sourceTree = "<group>"; };
 		F049B1E01A20551500003842 /* Dote.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dote.mm; sourceTree = "<group>"; };
@@ -12652,20 +12649,18 @@
 		F0A1F2A31A1EB21E00AC5379 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F049B1C51A2054DE00003842 /* DrugModeViewController.h */,
-				F049B1C61A2054DE00003842 /* DrugModeViewController.m */,
-				F049B1C71A2054DE00003842 /* DrugsTableViewController.h */,
-				F049B1C81A2054DE00003842 /* DrugsTableViewController.mm */,
+				F049B1C51A2054DE00003842 /* AlgorithmNavigationController.h */,
+				F049B1C61A2054DE00003842 /* AlgorithmNavigationController.m */,
+				F049B1C71A2054DE00003842 /* AlgorithmTableViewController.h */,
+				F049B1C81A2054DE00003842 /* AlgorithmTableViewController.mm */,
 				F049B1C91A2054DE00003842 /* EnterParametersTableViewController.h */,
 				F049B1CA1A2054DE00003842 /* EnterParametersTableViewController.m */,
 				F049B1CB1A2054DE00003842 /* HomeController.h */,
 				F049B1CC1A2054DE00003842 /* HomeController.m */,
-				F049B1CD1A2054DE00003842 /* MiscTableViewController.h */,
-				F049B1CE1A2054DE00003842 /* MiscTableViewController.m */,
+				F049B1CD1A2054DE00003842 /* MoreTableViewController.h */,
+				F049B1CE1A2054DE00003842 /* MoreTableViewController.m */,
 				F049B1CF1A2054DE00003842 /* QuestionViewController.h */,
 				F049B1D01A2054DE00003842 /* QuestionViewController.mm */,
-				F049B1D11A2054DE00003842 /* ToxinsTableViewController.h */,
-				F049B1D21A2054DE00003842 /* ToxinsTableViewController.mm */,
 				F01407661A1BAB9C0036A69A /* AppDelegate.h */,
 				F01407671A1BAB9C0036A69A /* AppDelegate.mm */,
 			);
@@ -16768,7 +16763,7 @@
 				F08805E81A3ACC14002CDFEA /* PotassiumIodide.cpp in Sources */,
 				F08805DB1A3ACC14002CDFEA /* CyanideToxicity.cpp in Sources */,
 				F08805E61A3ACC14002CDFEA /* Octreotide.cpp in Sources */,
-				F049B1D31A2054DE00003842 /* DrugModeViewController.m in Sources */,
+				F049B1D31A2054DE00003842 /* AlgorithmNavigationController.m in Sources */,
 				F08805D31A3ACC14002CDFEA /* Atropine.cpp in Sources */,
 				F08805D91A3ACC14002CDFEA /* CoralSnake.cpp in Sources */,
 				F08805DE1A3ACC14002CDFEA /* Dimercap.cpp in Sources */,
@@ -16780,12 +16775,11 @@
 				F014076B1A1BAB9C0036A69A /* Elixir.xcdatamodeld in Sources */,
 				F08805EA1A3ACC14002CDFEA /* PrussianBlue.cpp in Sources */,
 				F08805E21A3ACC14002CDFEA /* Fomepizole.cpp in Sources */,
-				F049B1D91A2054DE00003842 /* ToxinsTableViewController.mm in Sources */,
 				F08805D11A3ACC14002CDFEA /* Acetylcysteine.cpp in Sources */,
 				F08805E01A3ACC14002CDFEA /* Etoh.cpp in Sources */,
-				F049B1D41A2054DE00003842 /* DrugsTableViewController.mm in Sources */,
+				F049B1D41A2054DE00003842 /* AlgorithmTableViewController.mm in Sources */,
 				F08805DD1A3ACC14002CDFEA /* DigiFab.cpp in Sources */,
-				F049B1D71A2054DE00003842 /* MiscTableViewController.m in Sources */,
+				F049B1D71A2054DE00003842 /* MoreTableViewController.m in Sources */,
 				F08805E11A3ACC14002CDFEA /* Flumazenil.cpp in Sources */,
 				F08805DF1A3ACC14002CDFEA /* EdtaDimercaprol.cpp in Sources */,
 				F049B1E31A20551500003842 /* Dote.mm in Sources */,

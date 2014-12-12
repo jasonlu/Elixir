@@ -144,72 +144,72 @@ static Dote *me = nil;
     //Dimercaprol for heavy metal
     else if ([drugName isEqualToString: @"Dimercap"])
     {
-        //dote = new libAntidote::Dimercap(age, height, weight);
+        dote = new libAntidote::Dimercap(age, height, weight);
     }
     //Ethanol for methanol and ethylene glycol
     else if ([drugName isEqualToString: @"Etoh"])
     {
-        //dote = new libAntidote::Etoh(age, height, weight);
+        dote = new libAntidote::Etoh(age, height, weight);
     }
     //Flumazenil
     else if ([drugName isEqualToString: @"Flumazenil"])
     {
-        //dote = new libAntidote::Flumazenil(age, height, weight);
+        dote = new libAntidote::Flumazenil(age, height, weight);
     }
     //Fomepizole
     else if ([drugName isEqualToString: @"Fomepizole"])
     {
-        //dote = new libAntidote::Fomepizole(age, height, weight);
+        dote = new libAntidote::Fomepizole(age, height, weight);
     }
     //Glucagon
     else if ([drugName isEqualToString: @"Glucagon"])
     {
-        //dote = new libAntidote::Glucagon(age, height, weight);
+        dote = new libAntidote::Glucagon(age, height, weight);
     }
     //Methylene blue
     else if ([drugName isEqualToString: @"MetBlue"])
     {
-        //dote = new libAntidote::MetBlue(age, height, weight);
+        dote = new libAntidote::MetBlue(age, height, weight);
     }
     //Naloxone
     else if ([drugName isEqualToString: @"Naloxone"])
     {
-        //dote = new libAntidote::Naloxone(age, height, weight);
+        dote = new libAntidote::Naloxone(age, height, weight);
     }
     //Octreotide
     else if ([drugName isEqualToString: @"Octreotide"])
     {
-        //dote = new libAntidote::Octreotide(age, height, weight);
+        dote = new libAntidote::Octreotide(age, height, weight);
     }
     //Physostigmine
     else if ([drugName isEqualToString: @"Physostigmine"])
     {
-        //dote = new libAntidote::Physostigmine(age, height, weight);
+        dote = new libAntidote::Physostigmine(age, height, weight);
     }
     //Potassium Iodide
     else if ([drugName isEqualToString: @"PotassiumIodide"])
     {
-        //dote = new libAntidote::PotassiumIodide(age, height, weight);
+        dote = new libAntidote::PotassiumIodide(age, height, weight);
     }
     //Pralidoxime
     else if ([drugName isEqualToString: @"Pralidoxime"])
     {
-        //dote = new libAntidote::Pralidoxime(age, height, weight);
+        dote = new libAntidote::Pralidoxime(age, height, weight);
     }
     //Prussian Blue
     else if ([drugName isEqualToString: @"PrussianBlue"])
     {
-        //dote = new libAntidote::PrussianBlue(age, height, weight);
+        dote = new libAntidote::PrussianBlue(age, height, weight);
     }
     //Pyridoxine vitamin B-6
     else if ([drugName isEqualToString: @"Pyridoxine"])
     {
-        //dote = new libAntidote::Pyridoxine(age, height, weight);
+        dote = new libAntidote::Pyridoxine(age, height, weight);
     }
     //Sodium Bicarbonate
     else if ([drugName isEqualToString: @"SodiumBicarbonate"])
     {
-        //dote = new libAntidote::SodiumBicarbonate(age, height, weight);
+        dote = new libAntidote::SodiumBicarbonate(age, height, weight);
     }
 }
 

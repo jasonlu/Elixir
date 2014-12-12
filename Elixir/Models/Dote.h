@@ -11,9 +11,10 @@
 #ifdef __cplusplus
 
 #include "Acetylcysteine.h"
+#include "Antidote.h"
 #include "Atropine.h"
-#include "BabyBIG.h"
 #include "BATbotulism.h"
+#include "BabyBIG.h"
 #include "BlackWidow.h"
 #include "CaChloride.h"
 #include "CaDTPA.h"
@@ -22,6 +23,21 @@
 #include "CyanideToxicity.h"
 #include "Deferoxamine.h"
 #include "DigiFab.h"
+#include "Dimercap.h"
+#include "EdtaDimercaprol.h"
+#include "Etoh.h"
+#include "Flumazenil.h"
+#include "Fomepizole.h"
+#include "Glucagon.h"
+#include "MetBlue.h"
+#include "Naloxone.h"
+#include "Octreotide.h"
+#include "Physostigmine.h"
+#include "PotassiumIodide.h"
+#include "Pralidoxime.h"
+#include "PrussianBlue.h"
+#include "Pyridoxine.h"
+#include "SodiumBicarbonate.h"
 
 
 

@@ -9,14 +9,14 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController id="o68-24-0X2" customClass="QuestionViewController">
             <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="0gl-Cw-uHb"/>
-                <viewControllerLayoutGuide type="bottom" id="f96-6l-JF1"/>
+                <viewControllerLayoutGuide type="top" id="eue-G9-XuV"/>
+                <viewControllerLayoutGuide type="bottom" id="U95-Yd-f0V"/>
             </layoutGuides>
-            <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="2nH-pf-uZK">
+            <view key="view" contentMode="scaleToFill" id="hhg-N0-g7G">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Dh-1F-d2o">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bgG-Ss-fD8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-aG-DQ7" userLabel="Algorithm title">
@@ -30,7 +30,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="105" id="eZe-e5-4Oy"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -45,31 +45,38 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FWg-aG-DQ7" secondAttribute="trailing" constant="20" id="35H-gq-40H"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="leading" secondItem="FWg-aG-DQ7" secondAttribute="leading" id="5e1-FR-YU7"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="width" secondItem="FWg-aG-DQ7" secondAttribute="width" id="BPd-r8-Th2"/>
-                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="leading" secondItem="9Dh-1F-d2o" secondAttribute="leading" constant="20" id="J02-BT-mqb"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="trailing" secondItem="9si-66-tDh" secondAttribute="trailing" id="PVa-qv-JV3"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="top" secondItem="FWg-aG-DQ7" secondAttribute="bottom" constant="20" id="duH-lO-vIg"/>
-                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="top" secondItem="9Dh-1F-d2o" secondAttribute="top" constant="20" id="fAS-DA-oqh"/>
-                            <constraint firstItem="9si-66-tDh" firstAttribute="top" secondItem="fQY-gY-1av" secondAttribute="bottom" constant="20" id="hGX-L5-rqH"/>
+                            <constraint firstItem="fQY-gY-1av" firstAttribute="trailing" secondItem="9si-66-tDh" secondAttribute="trailing" id="5xh-qJ-xYb"/>
+                            <constraint firstItem="fQY-gY-1av" firstAttribute="top" secondItem="FWg-aG-DQ7" secondAttribute="bottom" constant="20" id="61U-Zr-pkY"/>
+                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="leading" secondItem="bgG-Ss-fD8" secondAttribute="leading" constant="20" id="Dg6-Ma-1az"/>
+                            <constraint firstItem="fQY-gY-1av" firstAttribute="leading" secondItem="FWg-aG-DQ7" secondAttribute="leading" id="Hd3-3r-kJf"/>
+                            <constraint firstItem="9si-66-tDh" firstAttribute="top" secondItem="fQY-gY-1av" secondAttribute="bottom" constant="20" id="QpM-Mh-6Ev"/>
+                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="top" secondItem="bgG-Ss-fD8" secondAttribute="top" constant="20" id="T52-wA-aab"/>
+                            <constraint firstAttribute="trailing" secondItem="FWg-aG-DQ7" secondAttribute="trailing" constant="20" id="Uko-UU-5Dv"/>
+                            <constraint firstAttribute="centerX" secondItem="FWg-aG-DQ7" secondAttribute="centerX" id="UpY-iR-KdG"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9si-66-tDh" secondAttribute="bottom" constant="100" id="cJl-6Y-n8U"/>
+                            <constraint firstItem="fQY-gY-1av" firstAttribute="width" secondItem="FWg-aG-DQ7" secondAttribute="width" id="ytj-bT-GoK"/>
                         </constraints>
-                    </view>
+                    </scrollView>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="9Dh-1F-d2o" firstAttribute="height" secondItem="2nH-pf-uZK" secondAttribute="height" id="4kE-nM-vNg"/>
-                    <constraint firstAttribute="centerY" secondItem="9Dh-1F-d2o" secondAttribute="centerY" id="Fh9-Lx-D54"/>
-                    <constraint firstAttribute="centerX" secondItem="9Dh-1F-d2o" secondAttribute="centerX" id="gFF-nm-1a6"/>
-                    <constraint firstItem="9Dh-1F-d2o" firstAttribute="width" secondItem="2nH-pf-uZK" secondAttribute="width" id="kec-FC-uQB"/>
+                    <constraint firstAttribute="width" secondItem="bgG-Ss-fD8" secondAttribute="width" id="G9C-07-Pi0"/>
+                    <constraint firstAttribute="centerX" secondItem="bgG-Ss-fD8" secondAttribute="centerX" id="Sue-nl-EAQ"/>
+                    <constraint firstAttribute="height" secondItem="bgG-Ss-fD8" secondAttribute="height" id="UqL-7I-xhG"/>
+                    <constraint firstAttribute="centerY" secondItem="bgG-Ss-fD8" secondAttribute="centerY" id="qRn-Zx-MLR"/>
                 </constraints>
-            </scrollView>
+            </view>
             <connections>
                 <outlet property="lbQuestionText" destination="fQY-gY-1av" id="uI4-zJ-45B"/>
                 <outlet property="lbTitle" destination="FWg-aG-DQ7" id="4mj-yy-Aaf"/>
             </connections>
-            <point key="canvasLocation" x="339" y="338"/>
+            <point key="canvasLocation" x="319" y="356"/>
         </viewController>
+        <view contentMode="scaleToFill" id="qcd-N0-TNV">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+        </view>
     </objects>
 </document>

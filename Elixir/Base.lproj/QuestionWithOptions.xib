@@ -9,14 +9,14 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <viewController id="o68-24-0X2" customClass="QuestionViewController">
             <layoutGuides>
-                <viewControllerLayoutGuide type="top" id="0gl-Cw-uHb"/>
-                <viewControllerLayoutGuide type="bottom" id="f96-6l-JF1"/>
+                <viewControllerLayoutGuide type="top" id="7pe-T5-bWu"/>
+                <viewControllerLayoutGuide type="bottom" id="hNt-ZW-3Xz"/>
             </layoutGuides>
-            <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="2nH-pf-uZK">
+            <view key="view" contentMode="scaleToFill" id="8ep-ou-huy">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Dh-1F-d2o">
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2nH-pf-uZK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWg-aG-DQ7" userLabel="Algorithm title">
@@ -35,35 +35,43 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="K41-uP-OGs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="K41-uP-OGs">
                                 <rect key="frame" x="20" y="244" width="560" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Iig-VC-nOK"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="hfB-k4-oAl"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="hfB-k4-oAl"/>
+                                    </mask>
+                                </variation>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="FWg-aG-DQ7" secondAttribute="trailing" constant="20" id="35H-gq-40H"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="leading" secondItem="FWg-aG-DQ7" secondAttribute="leading" id="5e1-FR-YU7"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="width" secondItem="FWg-aG-DQ7" secondAttribute="width" id="BPd-r8-Th2"/>
-                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="leading" secondItem="9Dh-1F-d2o" secondAttribute="leading" constant="20" id="J02-BT-mqb"/>
-                            <constraint firstItem="K41-uP-OGs" firstAttribute="leading" secondItem="fQY-gY-1av" secondAttribute="leading" id="O8t-Xd-pMN"/>
-                            <constraint firstItem="fQY-gY-1av" firstAttribute="top" secondItem="FWg-aG-DQ7" secondAttribute="bottom" constant="20" id="duH-lO-vIg"/>
-                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="top" secondItem="9Dh-1F-d2o" secondAttribute="top" constant="20" id="fAS-DA-oqh"/>
-                            <constraint firstItem="K41-uP-OGs" firstAttribute="width" secondItem="fQY-gY-1av" secondAttribute="width" id="hkM-bd-LTs"/>
-                            <constraint firstItem="K41-uP-OGs" firstAttribute="top" secondItem="fQY-gY-1av" secondAttribute="bottom" constant="20" id="vmA-zt-Q8O"/>
+                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="leading" secondItem="2nH-pf-uZK" secondAttribute="leading" constant="20" id="2zw-v7-8Ka"/>
+                            <constraint firstAttribute="centerX" secondItem="K41-uP-OGs" secondAttribute="centerX" id="3TN-KS-pL2"/>
+                            <constraint firstItem="fQY-gY-1av" firstAttribute="width" secondItem="FWg-aG-DQ7" secondAttribute="width" id="4oz-Dq-EEi"/>
+                            <constraint firstAttribute="trailing" secondItem="FWg-aG-DQ7" secondAttribute="trailing" constant="20" id="4xR-rP-i8u"/>
+                            <constraint firstItem="K41-uP-OGs" firstAttribute="width" secondItem="fQY-gY-1av" secondAttribute="width" id="BCs-wu-6sw"/>
+                            <constraint firstAttribute="centerX" secondItem="FWg-aG-DQ7" secondAttribute="centerX" id="BoR-iO-asa"/>
+                            <constraint firstItem="fQY-gY-1av" firstAttribute="top" secondItem="FWg-aG-DQ7" secondAttribute="bottom" constant="20" id="kqA-KR-1Td"/>
+                            <constraint firstItem="K41-uP-OGs" firstAttribute="top" secondItem="fQY-gY-1av" secondAttribute="bottom" constant="20" id="lJ9-Ml-f3e"/>
+                            <constraint firstAttribute="centerX" secondItem="fQY-gY-1av" secondAttribute="centerX" id="mp0-Zo-fTn"/>
+                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="K41-uP-OGs" secondAttribute="bottom" constant="500" id="ruf-mA-88O"/>
+                            <constraint firstItem="FWg-aG-DQ7" firstAttribute="top" secondItem="2nH-pf-uZK" secondAttribute="top" constant="20" id="xpn-ce-yVD"/>
                         </constraints>
-                    </view>
+                    </scrollView>
                 </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="9Dh-1F-d2o" firstAttribute="height" secondItem="2nH-pf-uZK" secondAttribute="height" id="4kE-nM-vNg"/>
-                    <constraint firstAttribute="centerY" secondItem="9Dh-1F-d2o" secondAttribute="centerY" id="Fh9-Lx-D54"/>
-                    <constraint firstAttribute="centerX" secondItem="9Dh-1F-d2o" secondAttribute="centerX" id="gFF-nm-1a6"/>
-                    <constraint firstItem="9Dh-1F-d2o" firstAttribute="width" secondItem="2nH-pf-uZK" secondAttribute="width" id="kec-FC-uQB"/>
+                    <constraint firstAttribute="centerX" secondItem="2nH-pf-uZK" secondAttribute="centerX" id="9My-MS-9L1"/>
+                    <constraint firstItem="2nH-pf-uZK" firstAttribute="height" secondItem="8ep-ou-huy" secondAttribute="height" id="PSC-Lo-eoC"/>
+                    <constraint firstItem="2nH-pf-uZK" firstAttribute="width" secondItem="8ep-ou-huy" secondAttribute="width" id="fLX-dd-BPt"/>
+                    <constraint firstAttribute="centerY" secondItem="2nH-pf-uZK" secondAttribute="centerY" id="g9J-5M-PCG"/>
                 </constraints>
-            </scrollView>
+            </view>
             <connections>
                 <outlet property="lbQuestionText" destination="fQY-gY-1av" id="uI4-zJ-45B"/>
                 <outlet property="lbTitle" destination="FWg-aG-DQ7" id="4mj-yy-Aaf"/>

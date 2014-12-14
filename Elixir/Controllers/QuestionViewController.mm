@@ -79,16 +79,11 @@
     // Initialize views by question type.
     std::string type = question->getType();
     if(type == "numbers") {
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         std::string unitType = question->getUnitType();
-        label.text = [NSString stringWithCString: unitType.c_str() encoding:[NSString defaultCStringEncoding]];
-        label.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
-        [label sizeToFit];
+        NSString *nsUnitType = [NSString stringWithCString: unitType.c_str() encoding:[NSString defaultCStringEncoding]];
+        [_lbUnitType setText:nsUnitType];
+        [_lbUnitType sizeToFit];
         
-        
-        
-        tfInputvalue.rightViewMode = UITextFieldViewModeAlways;
-        tfInputvalue.rightView = label;
         double ansValue = question->getAnswerFloat();
         if(ansValue == -1) {
             tfInputvalue.text = @"";
@@ -96,8 +91,6 @@
             tfInputvalue.text = [NSString stringWithFormat:@"%g", ansValue];
         }
         
-        [vResponseView setHidden:YES];
-        [tbOptionTable setHidden:YES];
         [tfInputvalue becomeFirstResponder];
         [btnNext setEnabled:NO];
         
@@ -105,19 +98,14 @@
         _gLeftSwipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeLeft:)];
         _gLeftSwipe.direction = UISwipeGestureRecognizerDirectionLeft;
         [[self view] addGestureRecognizer:_gLeftSwipe];
-        
-    } else if(type == "options" || type == "yesno") {
-        [vResponseView setHidden:YES];
-        [vInputView setHidden:YES];
-    } else if(type == "end" || type == "warning" || type == "info") {
-        [tbOptionTable setHidden:YES];
-        [vInputView setHidden:YES];
     }
+    
+
+        
     if(type == "end") {
-        btnNext.titleLabel.text = @"Finish";
+        [btnNext setTitle:@"Finish" forState: UIControlStateNormal];
         [_tvRef sizeToFit];
         [_vRefView sizeToFit];
-        _vRefView.hidden = false;
     }
 }
 
@@ -136,7 +124,12 @@
 
 
 - (IBAction)btnNextClicked:(UIButton *)sender {
-    NSString *stringValue = @"";//[tfInputvalue text];
+    if(tfInputvalue == nil) {
+        question->setAnswer("1");
+        [self showNextQuestion];
+        return;
+    }
+    NSString *stringValue = [tfInputvalue text];
     double value = [stringValue doubleValue];
     if( value < question->getMin() || value > question->getMax() ) {
         UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Value our of range"
@@ -210,10 +203,16 @@
     // Configure the cell...
     NSString *text = [optionArray objectAtIndex:indexPath.row];
     cell.textLabel.text = text;//[NSString stringWithFormat:];
+    
     double tableViewHeight = [tbOptionTable contentSize].height;
+
     CGRect frame = tbOptionTable.frame;
     frame.size.height =  tableViewHeight;
+    [tbOptionTable setTranslatesAutoresizingMaskIntoConstraints: YES];
     [tbOptionTable setFrame: frame];
+
+    
+    
     return cell;
 }
 

@@ -662,7 +662,7 @@ This educational program is not intended for individual patient care. If you are
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7WS-tI-aSr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3426" y="-542.25"/>
+            <point key="canvasLocation" x="-3565.5" y="111.75"/>
         </scene>
     </scenes>
     <resources>

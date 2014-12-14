@@ -14,6 +14,7 @@
 		F01407731A1BAB9C0036A69A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01407721A1BAB9C0036A69A /* Images.xcassets */; };
 		F01407761A1BAB9C0036A69A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F01407741A1BAB9C0036A69A /* LaunchScreen.xib */; };
 		F01407821A1BAB9C0036A69A /* ElixirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F01407811A1BAB9C0036A69A /* ElixirTests.m */; };
+		F03657DC1A3BECFA000E4398 /* QuestionWithOk.xib in Resources */ = {isa = PBXBuildFile; fileRef = F03657DA1A3BECFA000E4398 /* QuestionWithOk.xib */; };
 		F049A2381A203A2800003842 /* exclamation_mark-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F04992831A203A2100003842 /* exclamation_mark-25.png */; };
 		F049A2391A203A2800003842 /* exclamation_mark-50.png in Resources */ = {isa = PBXBuildFile; fileRef = F04992841A203A2100003842 /* exclamation_mark-50.png */; };
 		F049A23A1A203A2800003842 /* question_mark-25.png in Resources */ = {isa = PBXBuildFile; fileRef = F04992851A203A2100003842 /* question_mark-25.png */; };
@@ -4032,7 +4033,9 @@
 		F08805EB1A3ACC14002CDFEA /* Pyridoxine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F08805CB1A3ACC14002CDFEA /* Pyridoxine.cpp */; };
 		F08805EC1A3ACC14002CDFEA /* Question.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F08805CD1A3ACC14002CDFEA /* Question.cpp */; };
 		F08805ED1A3ACC14002CDFEA /* SodiumBicarbonate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F08805CF1A3ACC14002CDFEA /* SodiumBicarbonate.cpp */; };
-		F08805F01A3AF013002CDFEA /* AlgorithmReference.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08805EE1A3AF013002CDFEA /* AlgorithmReference.xib */; };
+		F08DC6A11A3E3D54003F2FF1 /* QuestionWithInput.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08DC69B1A3E3D54003F2FF1 /* QuestionWithInput.xib */; };
+		F08DC6A21A3E3D54003F2FF1 /* QuestionWithOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08DC69D1A3E3D54003F2FF1 /* QuestionWithOptions.xib */; };
+		F08DC6A31A3E3D54003F2FF1 /* QuestionWithRef.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08DC69F1A3E3D54003F2FF1 /* QuestionWithRef.xib */; };
 		F0BB61001A1FB70500A1CD5E /* BU_logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */; };
 /* End PBXBuildFile section */
 
@@ -4059,6 +4062,7 @@
 		F014077B1A1BAB9C0036A69A /* ElixirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElixirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01407801A1BAB9C0036A69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01407811A1BAB9C0036A69A /* ElixirTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ElixirTests.m; sourceTree = "<group>"; };
+		F03657DB1A3BECFA000E4398 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/QuestionWithOk.xib; sourceTree = "<group>"; };
 		F04992831A203A2100003842 /* exclamation_mark-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exclamation_mark-25.png"; sourceTree = "<group>"; };
 		F04992841A203A2100003842 /* exclamation_mark-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exclamation_mark-50.png"; sourceTree = "<group>"; };
 		F04992851A203A2100003842 /* question_mark-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "question_mark-25.png"; sourceTree = "<group>"; };
@@ -8114,7 +8118,9 @@
 		F08805CE1A3ACC14002CDFEA /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Question.h; path = ../../../libAntidote/libAntidote/Question.h; sourceTree = "<group>"; };
 		F08805CF1A3ACC14002CDFEA /* SodiumBicarbonate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SodiumBicarbonate.cpp; path = ../../../libAntidote/libAntidote/SodiumBicarbonate.cpp; sourceTree = "<group>"; };
 		F08805D01A3ACC14002CDFEA /* SodiumBicarbonate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SodiumBicarbonate.h; path = ../../../libAntidote/libAntidote/SodiumBicarbonate.h; sourceTree = "<group>"; };
-		F08805EF1A3AF013002CDFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AlgorithmReference.xib; sourceTree = "<group>"; };
+		F08DC69C1A3E3D54003F2FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/QuestionWithInput.xib; sourceTree = "<group>"; };
+		F08DC69E1A3E3D54003F2FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/QuestionWithOptions.xib; sourceTree = "<group>"; };
+		F08DC6A01A3E3D54003F2FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/QuestionWithRef.xib; sourceTree = "<group>"; };
 		F0BB60FF1A1FB70500A1CD5E /* BU_logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = BU_logo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -12556,8 +12562,11 @@
 			children = (
 				F014076F1A1BAB9C0036A69A /* Main.storyboard */,
 				F049B1DB1A20550400003842 /* DrugsTableHeader.xib */,
+				F08DC69B1A3E3D54003F2FF1 /* QuestionWithInput.xib */,
+				F08DC69D1A3E3D54003F2FF1 /* QuestionWithOptions.xib */,
+				F08DC69F1A3E3D54003F2FF1 /* QuestionWithRef.xib */,
+				F03657DA1A3BECFA000E4398 /* QuestionWithOk.xib */,
 				F01407741A1BAB9C0036A69A /* LaunchScreen.xib */,
-				F08805EE1A3AF013002CDFEA /* AlgorithmReference.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -15168,6 +15177,7 @@
 				F049A4E11A203A2800003842 /* trainers-50.png in Resources */,
 				F049A3DA1A203A2800003842 /* voice_presentation-25.png in Resources */,
 				F049A7AB1A203A2800003842 /* clubs-50.png in Resources */,
+				F08DC6A31A3E3D54003F2FF1 /* QuestionWithRef.xib in Resources */,
 				F049B12A1A203A2800003842 /* info_filled-25.png in Resources */,
 				F049AF391A203A2800003842 /* timezone-2-50.png in Resources */,
 				F049A4BF1A203A2800003842 /* bra-50.png in Resources */,
@@ -15798,6 +15808,7 @@
 				F049AA8F1A203A2800003842 /* tails-50.png in Resources */,
 				F049AECD1A203A2800003842 /* pulley-50.png in Resources */,
 				F049A7291A203A2800003842 /* cookies-50.png in Resources */,
+				F08DC6A21A3E3D54003F2FF1 /* QuestionWithOptions.xib in Resources */,
 				F049A4691A203A2800003842 /* monument-50.png in Resources */,
 				F049B0391A203A2800003842 /* waterfall-50.png in Resources */,
 				F049B0601A203A2800003842 /* minus-25.png in Resources */,
@@ -16076,6 +16087,7 @@
 				F049A88F1A203A2800003842 /* walking_stick-50.png in Resources */,
 				F049A6FE1A203A2800003842 /* purchase_order-25.png in Resources */,
 				F049A3311A203A2800003842 /* year_of_rabbit-50.png in Resources */,
+				F03657DC1A3BECFA000E4398 /* QuestionWithOk.xib in Resources */,
 				F049A6A21A203A2800003842 /* mp3-25.png in Resources */,
 				F049AEA01A203A2800003842 /* hand_biceps-25.png in Resources */,
 				F049ABAE1A203A2800003842 /* webbing-25.png in Resources */,
@@ -16262,6 +16274,7 @@
 				F049B1581A203A2800003842 /* redo-25.png in Resources */,
 				F049AE1E1A203A2800003842 /* antivirus_scanner-25.png in Resources */,
 				F049A8901A203A2800003842 /* wheelchair-25.png in Resources */,
+				F08DC6A11A3E3D54003F2FF1 /* QuestionWithInput.xib in Resources */,
 				F049A2B31A203A2800003842 /* down3-50.png in Resources */,
 				F049AB3D1A203A2800003842 /* my_topic-50.png in Resources */,
 				F049A4FE1A203A2800003842 /* video_camera-25.png in Resources */,
@@ -16567,7 +16580,6 @@
 				F049A54E1A203A2800003842 /* alphabetical_sorting_az-25.png in Resources */,
 				F049ABF11A203A2800003842 /* dj-50.png in Resources */,
 				F049A48D1A203A2800003842 /* pavilion-50.png in Resources */,
-				F08805F01A3AF013002CDFEA /* AlgorithmReference.xib in Resources */,
 				F049AE021A203A2800003842 /* school-25.png in Resources */,
 				F049A7A81A203A2800003842 /* clover-25.png in Resources */,
 				F049AF201A203A2800003842 /* minus_1year-25.png in Resources */,
@@ -16839,6 +16851,14 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		F03657DA1A3BECFA000E4398 /* QuestionWithOk.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F03657DB1A3BECFA000E4398 /* Base */,
+			);
+			name = QuestionWithOk.xib;
+			sourceTree = "<group>";
+		};
 		F049B1DB1A20550400003842 /* DrugsTableHeader.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -16847,12 +16867,28 @@
 			name = DrugsTableHeader.xib;
 			sourceTree = "<group>";
 		};
-		F08805EE1A3AF013002CDFEA /* AlgorithmReference.xib */ = {
+		F08DC69B1A3E3D54003F2FF1 /* QuestionWithInput.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F08805EF1A3AF013002CDFEA /* Base */,
+				F08DC69C1A3E3D54003F2FF1 /* Base */,
 			);
-			name = AlgorithmReference.xib;
+			name = QuestionWithInput.xib;
+			sourceTree = "<group>";
+		};
+		F08DC69D1A3E3D54003F2FF1 /* QuestionWithOptions.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F08DC69E1A3E3D54003F2FF1 /* Base */,
+			);
+			name = QuestionWithOptions.xib;
+			sourceTree = "<group>";
+		};
+		F08DC69F1A3E3D54003F2FF1 /* QuestionWithRef.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F08DC6A01A3E3D54003F2FF1 /* Base */,
+			);
+			name = QuestionWithRef.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

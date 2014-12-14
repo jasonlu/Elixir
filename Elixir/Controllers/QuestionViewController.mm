@@ -20,65 +20,73 @@
 
 @interface QuestionViewController () {
     libAntidote::Question *question;
+    Dote *dote;
 }
 
 @end
 
 @implementation QuestionViewController
 @synthesize btnNext;
-@synthesize lbTitle;
 @synthesize counter;
 @synthesize tvQuestionText;
 @synthesize tbOptionTable;
-@synthesize appDelegate;
 @synthesize vInputView;
 @synthesize vResponseView;
 @synthesize tfInputvalue;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    Dote *dote = [Dote sharedInstance];
+    [self loadQuestion];
+}
+
+- (void)loadQuestion {
+    dote = [Dote sharedInstance];
     if(dote == nil) {
+        // dote cannot be null.
         return;
     }
-    //[dote setDrug:@"Acetylcysteine"];
-    //NSString *ref = [dote getRef];
     
     question =  [dote getDrug]->getNextQuestion();
+    // Set title
+    [_lbTitle setText: [dote name]];
     
+    // Set question text
     NSString *nsQuestionText = [NSString stringWithCString:question->getText().c_str()
-                                         encoding:[NSString defaultCStringEncoding]];
-
-    
-    NSString *nsRef = [NSString stringWithCString:[dote getDrug]->getRef().c_str()
                                                   encoding:[NSString defaultCStringEncoding]];
-    _tvRef.text = nsRef;
-    tvQuestionText.text = nsQuestionText;
     
-    NSMutableArray *options = [[NSMutableArray alloc] init];
+    [_lbQuestionText setText:nsQuestionText];
+    [_lbQuestionText sizeToFit];
+    
+    // Set reference text
+    NSString *nsRef = [NSString stringWithCString:[dote getDrug]->getRef().c_str()
+                                         encoding:[NSString defaultCStringEncoding]];
+    [_lbRef setText:nsRef];
 
+
+    // Load options
+    NSMutableArray *options = [[NSMutableArray alloc] init];
     for(int i = 0; i < question->getOptionsCount(); i++) {
         NSString *opt =  [NSString stringWithCString:question->getOption(i).c_str()
                                             encoding:[NSString defaultCStringEncoding]];
-
         [options addObject:opt];
     }
     optionArray = [[NSArray alloc] initWithArray:options];
-    lbTitle.text = [dote name];
+
+    // Set option table
     tbOptionTable.delegate = self;
     tbOptionTable.dataSource = self;
-    std::string type = question->getType();
-    //NSLog(@"type:: %@", [NSString stringWithCString:type.c_str() encoding: [NSString defaultCStringEncoding]]);
     
+    // Initialize views by question type.
+    std::string type = question->getType();
     if(type == "numbers") {
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
         std::string unitType = question->getUnitType();
         label.text = [NSString stringWithCString: unitType.c_str() encoding:[NSString defaultCStringEncoding]];
         label.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
         [label sizeToFit];
+        
+        
+        
         tfInputvalue.rightViewMode = UITextFieldViewModeAlways;
         tfInputvalue.rightView = label;
         double ansValue = question->getAnswerFloat();
@@ -126,18 +134,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)btnNextClicked:(UIButton *)sender {
-    NSString *stringValue = [tfInputvalue text];
+    NSString *stringValue = @"";//[tfInputvalue text];
     double value = [stringValue doubleValue];
     if( value < question->getMin() || value > question->getMax() ) {
         UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Value our of range"
@@ -169,18 +168,22 @@
 }
 
 - (void)showNextQuestion {
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main"
-                                                         bundle:nil];
-    
+
     if(question->getType() != "end") {
-        // if(question->hasMoreOptions()) {
-        // Get instance of ViewController from storyboard.
-        QuestionViewController *add = [storyboard instantiateViewControllerWithIdentifier:@"QuestionViewControllerId"];
-        // Allocate AddProjectViewController
-        // add = [[DrugViewController alloc] init];
-        // [add loadView];
-        // Adds the above view controller to the stack and pushes it into view
-        [self.navigationController pushViewController:add animated:YES];
+        NSString *nibName = @"";
+        QuestionViewController* questionViewController;
+        std::string type = [dote getDrug]->getNextQuestion()->getType();
+        if(type == "numbers") {
+            nibName = @"QuestionWithInput";
+        } else if(type == "options" || type == "yesno") {
+            nibName = @"QuestionWithOptions";
+        } else if(type == "warning" || type == "info") {
+            nibName = @"QuestionWithOk";
+        } else if(type == "end") {
+            nibName = @"QuestionWithRef";
+        }
+        questionViewController = [[[NSBundle mainBundle] loadNibNamed:nibName owner:nil options:nil] objectAtIndex:0];
+        [[self navigationController] pushViewController:questionViewController animated:YES];
     } else {
         [self.navigationController popToRootViewControllerAnimated:YES];
     }
@@ -190,15 +193,10 @@
 
 // UITableView delegate methods.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    //NSLog(@"numberOfSectionsInTableView");
-    // Return the number of sections.
-    // If You have only one(1) section, return 1, otherwise you must handle sections
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //NSLog(@"tableView:tableView numberOfRowsInSection:section");
-    // Return the number of rows in the section.
     return [optionArray count];
 }
 

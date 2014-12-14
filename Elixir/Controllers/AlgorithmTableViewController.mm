@@ -9,6 +9,7 @@
 #import "AlgorithmTableViewController.h"
 #import "Dote.h"
 #import "Person.h"
+#import "QuestionViewController.h"
 
 @interface AlgorithmTableViewController () {
     UITableView *myView;
@@ -22,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     myView = (UITableView *)[self view];
+    
+    // Load table header.
     _vTableHeader = [[[NSBundle mainBundle] loadNibNamed:@"DrugsTableHeader" owner:self options:nil] objectAtIndex:0];
     
     CGRect frame = _vTableHeader.frame;
@@ -107,50 +110,29 @@
     NSDictionary *drug = [drugs objectAtIndex:indexPath.row];
     Dote *dote = [Dote sharedInstance];
     [dote setDrug: [drug objectForKey:@"Algorithm"]];
+    
+    // This works completely. All outlets works.
+    //    QuestionViewController* questionViewController = [[QuestionViewController alloc] init];
+    NSString *nibName = @"";
+    std::string type = [dote getDrug]->getNextQuestion()->getType();
+    NSLog(@"type: %s", type.c_str());
+    if(type == "numbers") {
+        nibName = @"QuestionWithInput";
+    } else if(type == "options" || type == "yesno") {
+        nibName = @"QuestionWithOptions";
+    } else if(type == "warning" || type == "info") {
+        nibName = @"QuestionWithOk";
+    } else if(type == "end") {
+        nibName = @"QuestionWithRef";
+    }
+    QuestionViewController* questionViewController = [[[NSBundle mainBundle] loadNibNamed: nibName owner:nil options:nil] objectAtIndex:0];
+    
+    
+    
+    //    UIView *questionView = [[[NSBundle mainBundle] loadNibNamed:@"QuestionWithOk" owner:questionViewController options:nil] objectAtIndex:0];
+    //    [questionViewController setView:questionView];
+    [[self navigationController] pushViewController:questionViewController animated:YES];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

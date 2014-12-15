@@ -18,5 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *lbWeight;
 @property (weak, nonatomic) IBOutlet UILabel *lbBSA;
 @property (weak, nonatomic) IBOutlet UILabel *lbBMI;
+@property (weak, nonatomic) IBOutlet UIButton *btnEdit;
+
+- (IBAction)btnEditClicked:(UIButton *)sender;
 
 @end

@@ -115,26 +115,26 @@ This educational program is not intended for individual patient care. If you are
             </objects>
             <point key="canvasLocation" x="-5634" y="-578.25"/>
         </scene>
-        <!--Drug-->
+        <!--Antidote Controller-->
         <scene sceneID="7ce-CR-dlf">
             <objects>
-                <navigationController storyboardIdentifier="DurgModeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61w-hw-n2m" customClass="AlgorithmNavigationController" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Drug" image="pill-25.png" id="WVY-R2-MCm"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="v1u-SM-j1t">
+                <navigationController storyboardIdentifier="DurgModeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="61w-hw-n2m" userLabel="Antidote Controller" customClass="AlgorithmNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Antidote" image="pill-25.png" id="WVY-R2-MCm"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v1u-SM-j1t">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aQ4-XQ-GIu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-6249" y="281.25"/>
+            <point key="canvasLocation" x="-6321" y="281.25"/>
         </scene>
         <!--Algorithm Table-->
         <scene sceneID="cKx-32-lhp">
             <objects>
                 <tableViewController storyboardIdentifier="AlgorithmTableViewControllerId" title="Select antidote" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xif-Nx-XKh" userLabel="Algorithm Table" customClass="AlgorithmTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SR7-zY-R5y">
+                    <tableView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="SR7-zY-R5y">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -194,8 +194,8 @@ This educational program is not intended for individual patient care. If you are
             <objects>
                 <navigationController storyboardIdentifier="ToxinModeView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ya9-M4-mk1" customClass="AlgorithmNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Toxins" image="skull-25.png" id="TjG-PE-X94"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="obF-ep-qyx">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="obF-ep-qyx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

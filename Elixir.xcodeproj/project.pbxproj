@@ -3998,7 +3998,7 @@
 		F049B1D61A2054DE00003842 /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1CC1A2054DE00003842 /* HomeController.m */; };
 		F049B1D71A2054DE00003842 /* MoreTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1CE1A2054DE00003842 /* MoreTableViewController.m */; };
 		F049B1D81A2054DE00003842 /* QuestionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1D01A2054DE00003842 /* QuestionViewController.mm */; };
-		F049B1DD1A20550400003842 /* DrugsTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F049B1DB1A20550400003842 /* DrugsTableHeader.xib */; };
+		F049B1DD1A20550400003842 /* AlgorithmTableHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F049B1DB1A20550400003842 /* AlgorithmTableHeader.xib */; };
 		F049B1E31A20551500003842 /* Dote.mm in Sources */ = {isa = PBXBuildFile; fileRef = F049B1E01A20551500003842 /* Dote.mm */; };
 		F049B1E41A20551500003842 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F049B1E21A20551500003842 /* Person.m */; };
 		F049B1E91A20552600003842 /* defaultPref.plist in Resources */ = {isa = PBXBuildFile; fileRef = F049B1E61A20552600003842 /* defaultPref.plist */; };
@@ -8052,7 +8052,7 @@
 		F049B1CE1A2054DE00003842 /* MoreTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MoreTableViewController.m; path = Controllers/MoreTableViewController.m; sourceTree = "<group>"; };
 		F049B1CF1A2054DE00003842 /* QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionViewController.h; path = Controllers/QuestionViewController.h; sourceTree = "<group>"; };
 		F049B1D01A2054DE00003842 /* QuestionViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = QuestionViewController.mm; path = Controllers/QuestionViewController.mm; sourceTree = "<group>"; };
-		F049B1DC1A20550400003842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/DrugsTableHeader.xib; sourceTree = "<group>"; };
+		F049B1DC1A20550400003842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/AlgorithmTableHeader.xib; sourceTree = "<group>"; };
 		F049B1DF1A20551500003842 /* Dote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dote.h; sourceTree = "<group>"; };
 		F049B1E01A20551500003842 /* Dote.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Dote.mm; sourceTree = "<group>"; };
 		F049B1E11A20551500003842 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -12561,7 +12561,7 @@
 			isa = PBXGroup;
 			children = (
 				F014076F1A1BAB9C0036A69A /* Main.storyboard */,
-				F049B1DB1A20550400003842 /* DrugsTableHeader.xib */,
+				F049B1DB1A20550400003842 /* AlgorithmTableHeader.xib */,
 				F08DC69B1A3E3D54003F2FF1 /* QuestionWithInput.xib */,
 				F08DC69D1A3E3D54003F2FF1 /* QuestionWithOptions.xib */,
 				F08DC69F1A3E3D54003F2FF1 /* QuestionWithRef.xib */,
@@ -13133,7 +13133,7 @@
 				F049ACC71A203A2800003842 /* old_time_camera_filled-50.png in Resources */,
 				F049ACE31A203A2800003842 /* slr_camera_body_filled-50.png in Resources */,
 				F049AB6B1A203A2800003842 /* vomited-50.png in Resources */,
-				F049B1DD1A20550400003842 /* DrugsTableHeader.xib in Resources */,
+				F049B1DD1A20550400003842 /* AlgorithmTableHeader.xib in Resources */,
 				F049A7261A203A2800003842 /* coffee_to_go-25.png in Resources */,
 				F049A2901A203A2800003842 /* octopus-25.png in Resources */,
 				F049A6021A203A2800003842 /* cut_filled-25.png in Resources */,
@@ -16859,12 +16859,12 @@
 			name = QuestionWithOk.xib;
 			sourceTree = "<group>";
 		};
-		F049B1DB1A20550400003842 /* DrugsTableHeader.xib */ = {
+		F049B1DB1A20550400003842 /* AlgorithmTableHeader.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				F049B1DC1A20550400003842 /* Base */,
 			);
-			name = DrugsTableHeader.xib;
+			name = AlgorithmTableHeader.xib;
 			sourceTree = "<group>";
 		};
 		F08DC69B1A3E3D54003F2FF1 /* QuestionWithInput.xib */ = {
